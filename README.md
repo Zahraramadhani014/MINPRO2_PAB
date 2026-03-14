@@ -182,10 +182,6 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
 
 Aplikasi **HabitBloom** menggunakan **Supabase Database** untuk menyimpan data habit pengguna. Tabel yang digunakan pada aplikasi **HabitBloom** adalah tabel `habits` yang menyimpan data kebiasaan pengguna. Berikut adalah struktur tabel yang digunakan:
 
-## 🗄 Struktur Database
-
-Tabel yang digunakan pada aplikasi **HabitBloom** adalah tabel `habits` yang menyimpan data kebiasaan pengguna.
-
 | Kolom Database | Tipe Data | Keterangan |
 |---------------|-----------|------------|
 | id | int | ID unik setiap habit yang tersimpan di dalam database. |
