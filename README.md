@@ -2,15 +2,16 @@
   <img src="https://github.com/user-attachments/assets/eb5aa8bf-ecc1-46af-b5ed-1d649a5a3df9" width="850"/>
 </p>
 
-<h1 align="center">🌸 Habit Builder 🌸 </h1>
+<h1 align="center">🌸 HabitBloom 🌸 </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-CE93D8?style=for-the-badge&logo=flutter&logoColor=white" />
   <img src="https://img.shields.io/badge/Dart-F8BBD0?style=for-the-badge&logo=dart&logoColor=black" />
+  <img src="https://img.shields.io/badge/SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Completed-ff85c1?style=for-the-badge" />
 </p>
 <p align="center">
-  <b>Consistency Tracker App</b>
+  <b>Habit Builder & Consistency Tracker App</b>
 </p>
 
 <p align="center">
@@ -31,89 +32,133 @@
 
 # 📌 Deskripsi Aplikasi
 
-  Habit Builder & Consistency Tracker App adalah aplikasi sederhana yang dibuat untuk membantu pengguna mencatat dan memantau kebiasaan harian. Aplikasi ini dirancang agar pengguna bisa lebih konsisten dalam menjalankan aktivitas sehari-hari, seperti belajar, olahraga, atau kebiasaan positif lainnya.
-  
-  Melalui aplikasi ini, pengguna dapat menambahkan daftar habit, melihat daftar habit, mengedit data, menghapusnya sesuai kebutuhan serta menandai habit yang sudah selesai dilakukan. Selain itu, tersedia progress bar yang akan otomatis menampilkan perkembangan berdasarkan jumlah habit yang telah diselesaikan. Setiap kali habit ditandai selesai, sistem akan menampilkan notifikasi sebagai bentuk motivasi.
-  
-  Aplikasi ini dibuat menggunakan Flutter sebagai bagian dari Mini Project praktikum, dengan tujuan untuk mengimplementasikan konsep CRUD (Create, Read, Update, Delete) dalam pengembangan aplikasi mobile.
+**HabitBloom** merupakan aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna membangun kebiasaan positif serta memantau konsistensi aktivitas harian.
+
+Aplikasi ini memungkinkan pengguna untuk mencatat berbagai kebiasaan yang ingin dilakukan setiap hari, seperti belajar, olahraga, membaca buku, atau aktivitas produktif lainnya. Setiap kebiasaan dapat ditambahkan, diedit, maupun dihapus secara fleksibel.
+
+HabitBloom juga menyediakan fitur **progress tracking** yang menampilkan jumlah kebiasaan yang telah diselesaikan setiap hari sehingga pengguna dapat melihat perkembangan konsistensi mereka.
+
+Data kebiasaan disimpan menggunakan **Supabase Database**, sehingga semua data dapat dikelola secara dinamis menggunakan operasi CRUD (Create, Read, Update, Delete).
+
+Selain itu, aplikasi ini dilengkapi dengan **sistem autentikasi login dan register menggunakan Supabase Auth** serta mendukung **Light Mode dan Dark Mode** untuk meningkatkan kenyamanan pengguna.
 
 ---
 
 # 🎯 Fitur Aplikasi
 
-  1. **Tambah Habit (Create)**
-    -> Pengguna dapat menambahkan habit baru dengan mengisi nama habit, kategori, dan target harian. Fitur ini memudahkan pengguna untuk mencatat kebiasaan yang ingin dijalankan setiap hari.
+### 1️⃣ Login & Register
 
-  2. **Lihat Daftar Habit (Read)**
-     -> Semua habit yang telah ditambahkan akan ditampilkan dalam bentuk daftar. Pengguna bisa langsung melihat detail seperti kategori dan target dari setiap habit.
+Pengguna dapat membuat akun baru dan login menggunakan email dan password melalui Supabase Authentication.
 
-  3. **Edit Habit (Update)**
-     -> Jika terdapat kesalahan atau ingin mengubah target, pengguna dapat mengedit data habit yang sudah dibuat tanpa perlu menghapusnya terlebih dahulu.
+### 2️⃣ Tambah Habit (Create)
 
-  4. **Hapus Habit (Delete)**
-     -> Habit yang sudah tidak diperlukan dapat dihapus dari daftar agar tampilan tetap rapi dan sesuai kebutuhan pengguna.
-     
-  5. **Navigasi ke Halaman Berbeda (Multi Page Navigation)**
-     -> Aplikasi menggunakan lebih dari satu halaman, sehingga proses penambahan dan pengeditan habit dilakukan di halaman terpisah agar lebih terstruktur dan nyaman digunakan.
+Pengguna dapat menambahkan kebiasaan baru dengan mengisi:
+- Nama Habit
+- Kategori
+- Target Harian
+- Catatan
 
-  6. **Progress bar otomatis berdasarkan jumlah habit yang selesai**
-     -> Progress bar akan menyesuaikan secara otomatis berdasarkan jumlah habit yang telah diselesaikan. Semakin banyak habit yang selesai, semakin penuh progress bar yang ditampilkan.
+### 3️⃣ Tampilkan Habit (Read)
 
-  7. **SnackBar notifikasi saat habit selesai**
-     -> Ketika pengguna menandai habit sebagai selesai, akan muncul notifikasi singkat sebagai tanda bahwa habit tersebut berhasil diselesaikan.
+Semua habit yang tersimpan akan ditampilkan dalam bentuk daftar pada halaman utama.
 
-  8. **Notifikasi khusus jika semua habit selesai**
-     -> Jika seluruh habit dalam satu hari telah diselesaikan, aplikasi akan menampilkan notifikasi khusus sebagai bentuk apresiasi dan motivasi tambahan bagi pengguna.
+### 4️⃣ Edit Habit (Update)
+
+Pengguna dapat mengubah data habit yang sudah ada jika terdapat kesalahan atau perubahan target.
+
+### 5️⃣ Hapus Habit (Delete)
+
+Habit yang sudah tidak diperlukan dapat dihapus dari daftar.
+
+### 6️⃣ Checklist Habit
+
+Setiap habit memiliki tombol check untuk menandai bahwa habit telah selesai dilakukan pada hari tersebut.
+
+### 7️⃣ Progress Habit
+
+Aplikasi menampilkan progress jumlah habit yang telah selesai dibandingkan dengan total habit.
+
+### 8️⃣ Search Habit
+
+Pengguna dapat mencari habit dengan mengetik nama habit pada kolom pencarian.
+
+### 9️⃣ Filter Kategori
+Habit dapat difilter berdasarkan kategori seperti:
+- Akademik
+- Kesehatan
+- Fitness
+- Produktivitas
+- Mental Health
+- Personal Development
+- Morning Routine
+- Spiritual
+
+### 🔟 Dark Mode & Light Mode
+Aplikasi mendukung tema terang dan gelap yang dapat diubah melalui tombol di aplikasi.
+
 
 ---
 
-# 🧩 Widget yang digunakan
+# 🧩 Widget yang Digunakan
+
+Aplikasi **HabitBloom** dibangun menggunakan berbagai widget Flutter untuk membentuk tampilan antarmuka serta mengatur interaksi pengguna. Berikut adalah beberapa widget utama yang digunakan dalam pengembangan aplikasi ini.
 
 | No | Widget | Fungsi |
 |----|--------|--------|
-| 1 | `MaterialApp` | Root aplikasi dan pengatur dasar aplikasi. |
-| 2 | `StatelessWidget` | Digunakan untuk widget yang tidak memiliki perubahan state (MyApp). |
-| 3 | `StatefulWidget` | Digunakan untuk widget yang memiliki perubahan data atau state (HomePage, AddHabitPage). |
-| 4 | `Scaffold` | Struktur utama halaman (AppBar, Body, FAB). |
-| 5 | `AppBar` | Menampilkan judul aplikasi. |
-| 6 | `Container` | Membungkus dan mengatur styling komponen. |
+| 1 | `MaterialApp` | Root aplikasi yang mengatur tema, navigasi, dan struktur dasar aplikasi. |
+| 2 | `StatelessWidget` | Digunakan untuk widget tanpa perubahan state seperti `MyApp`. |
+| 3 | `StatefulWidget` | Digunakan untuk halaman yang memiliki perubahan state seperti `HomePage`, `LoginPage`, `RegisterPage`, `HabitFormPage`, dan `HabitCard`. |
+| 4 | `Scaffold` | Struktur dasar halaman yang menyediakan AppBar, body, dan FloatingActionButton. |
+| 5 | `AppBar` | Menampilkan judul halaman serta tombol aksi seperti toggle theme dan profile. |
+| 6 | `Container` | Digunakan untuk membungkus widget serta memberikan styling seperti background, border radius, dan shadow. |
 | 7 | `Column` | Menyusun widget secara vertikal. |
 | 8 | `Row` | Menyusun widget secara horizontal. |
-| 9 | `Padding` | Memberi jarak antar komponen. |
-|10 | `Expanded` | Mengatur pembagian ruang pada layout. |
-|11 | `SizedBox` | Memberi jarak antar widget. |
-|12 | `ListView.builder` | Menampilkan daftar habit secara dinamis. |
-|13 | `Card` | Membungkus item habit agar tampil rapi. |
-|14 | `ListTile` | Menampilkan detail habit (icon, judul, aksi). |
-|15 | `TextField` | Input data habit. |
-|16 | `ElevatedButton` | Tombol untuk menyimpan habit. |
-|17 | `FloatingActionButton` | Tombol tambah habit. |
-|18 | `Checkbox` | Menandai habit selesai. |
-|19 | `LinearProgressIndicator` | Menampilkan progress penyelesaian habit. |
-|20 | `SnackBar` | Notifikasi saat habit selesai. |
-|21 | `Navigator` | Navigasi antar halaman. |
-|22 | `TextEditingController` | Mengontrol input pada TextField. |
+| 9 | `Padding` | Memberikan jarak di sekitar widget. |
+| 10 | `Expanded` | Mengatur pembagian ruang pada layout agar fleksibel. |
+| 11 | `SizedBox` | Memberikan jarak antar widget. |
+| 12 | `ListView` | Menampilkan daftar habit secara dinamis pada halaman utama. |
+| 13 | `ListView.builder` | Digunakan untuk membuat daftar habit secara otomatis berdasarkan data dari database. |
+| 14 | `ListTile` | Digunakan untuk menampilkan informasi habit seperti nama, kategori, target, dan aksi. |
+| 15 | `Text` | Menampilkan teks seperti judul halaman, nama habit, dan informasi lainnya. |
+| 16 | `TextField` | Digunakan untuk fitur pencarian habit pada halaman utama. |
+| 17 | `TextFormField` | Digunakan untuk input form seperti nama habit, kategori, target, catatan, email, dan password. |
+| 18 | `DropdownButtonFormField` | Digunakan untuk memilih kategori habit pada form. |
+| 19 | `ElevatedButton` | Digunakan sebagai tombol aksi seperti login, register, simpan habit, dan konfirmasi dialog. |
+| 20 | `OutlinedButton` | Digunakan sebagai tombol sekunder seperti batal atau reset form. |
+| 21 | `IconButton` | Digunakan untuk tombol aksi seperti edit, delete, logout, dan toggle theme. |
+| 22 | `FloatingActionButton` | Tombol untuk menambahkan habit baru. |
+| 23 | `LinearProgressIndicator` | Menampilkan progress penyelesaian habit. |
+| 24 | `SnackBar` | Menampilkan notifikasi ketika aksi berhasil dilakukan seperti tambah, edit, atau hapus habit. |
+| 25 | `Dialog` | Digunakan untuk konfirmasi seperti hapus habit, logout, dan notifikasi sukses. |
+| 26 | `AlertDialog` | Digunakan untuk menampilkan dialog informasi kepada pengguna. |
+| 27 | `Navigator` | Mengatur navigasi antar halaman seperti dari login ke home atau ke form habit. |
+| 28 | `MaterialPageRoute` | Digunakan bersama Navigator untuk berpindah halaman. |
+| 29 | `TextEditingController` | Mengontrol input teks pada form. |
+| 30 | `AnimatedContainer` | Digunakan pada checkbox habit untuk animasi perubahan status selesai. |
+| 31 | `AnimatedOpacity` | Memberikan efek perubahan transparansi pada habit yang sudah selesai. |
+| 32 | `TweenAnimationBuilder` | Digunakan untuk membuat animasi progress bar habit. |
+| 33 | `RefreshIndicator` | Digunakan untuk fitur pull-to-refresh pada daftar habit. |
+| 34 | `Stack` | Digunakan untuk menumpuk widget seperti background image dan overlay. |
+| 35 | `GestureDetector` | Digunakan untuk mendeteksi interaksi pengguna seperti klik checkbox habit. |
+| 36 | `PopScope` | Digunakan untuk menangani navigasi ketika pengguna mencoba keluar dari halaman form tanpa menyimpan perubahan. |
 
 ---
 
-# 🛠️ Tools yang digunakan
+# 🛠️ Tools yang Digunakan
 
-  Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses pembuatan lebih terstruktur dan efisien.
+Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses pengembangan lebih terstruktur, efisien, dan mudah dikelola.
 
-- **Flutter**  
-  Digunakan sebagai framework utama untuk membangun aplikasi berbasis mobile. Flutter memudahkan dalam membuat tampilan yang menarik sekaligus responsif.
+| Tools | Keterangan |
+|------|------------|
+| Flutter | Framework yang digunakan untuk membangun aplikasi mobile berbasis UI. |
+| Dart | Bahasa pemrograman utama yang digunakan dalam pengembangan aplikasi Flutter. |
+| Supabase | Digunakan sebagai backend untuk database dan authentication pengguna. |
+| Visual Studio Code (VS Code) | Digunakan sebagai code editor untuk menulis dan mengelola source code aplikasi. |
+| Git | Digunakan untuk version control agar perubahan kode dapat dilacak dengan baik. |
+| GitHub | Digunakan untuk menyimpan repository project serta mengelola source code secara online. |
+| dotenv | Digunakan untuk menyimpan konfigurasi sensitif seperti URL dan API Key Supabase. |
+| Chrome (Web Preview) | Digunakan untuk menjalankan dan menguji aplikasi Flutter dalam mode web selama proses pengembangan. |
 
-- **Dart**  
-  Bahasa pemrograman yang digunakan dalam pengembangan aplikasi ini. Seluruh logika program dan pengaturan tampilan ditulis menggunakan Dart.
-
-- **Visual Studio Code (VS Code)**  
-  Digunakan sebagai code editor untuk menulis dan mengelola source code aplikasi.
-
-- **Git & GitHub**  
-  Digunakan untuk version control dan penyimpanan repository project agar kode dapat dikelola dan didokumentasikan dengan baik.
-
-- **Chrome (Web Preview)**  
-  Digunakan untuk menjalankan dan melakukan pengujian aplikasi dalam mode web selama proses pengembangan.
 ---
 
 # 📂 Struktur Project
@@ -132,81 +177,162 @@
   Selain itu, terdapat file .gitignore yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub, seperti file hasil build. Terakhir, file README.md digunakan sebagai dokumentasi project yang berisi penjelasan mengenai
   aplikasi, fitur, serta struktur yang digunakan.
 
+
+# 🗄 Struktur Database
+
+Aplikasi **HabitBloom** menggunakan **Supabase Database** untuk menyimpan data habit pengguna. Tabel yang digunakan pada aplikasi **HabitBloom** adalah tabel `habits` yang menyimpan data kebiasaan pengguna. Berikut adalah struktur tabel yang digunakan:
+
+## 🗄 Struktur Database
+
+Tabel yang digunakan pada aplikasi **HabitBloom** adalah tabel `habits` yang menyimpan data kebiasaan pengguna.
+
+| Kolom Database | Tipe Data | Keterangan |
+|---------------|-----------|------------|
+| id | int | ID unik setiap habit yang tersimpan di dalam database. |
+| user_id | uuid | ID pengguna yang berasal dari Supabase Authentication. |
+| name | text | Menyimpan nama habit yang ingin dilakukan oleh pengguna. |
+| category | text | Menyimpan kategori habit seperti Akademik, Fitness, Produktivitas, dll. |
+| target | text | Target harian habit seperti 30 menit, 10 halaman, dan lainnya. |
+| notes | text | Catatan tambahan mengenai habit yang dibuat oleh pengguna. |
+| is_done | boolean | Menyimpan status apakah habit sudah selesai atau belum dilakukan. |
+
 ---
 
-# 🔄 Alur Penggunaan Aplikasi
+# 📸 Tampilan Aplikasi
 
-1. Ketika aplikasi dibuka, pengguna akan langsung melihat halaman utama yang menjadi pusat pengelolaan semua habit. Di halaman ini, seluruh kebiasaan yang sudah dibuat akan tampil secara berurutan lengkap dengan informasi kategori dan targetnya. Pada bagian atas layar terdapat indikator progres yang akan berubah sesuai jumlah habit yang berhasil diselesaikan.
+### Welcome Page
+Halaman pertama yang muncul ketika aplikasi dibuka.
 
-   Setiap aktivitas yang dilakukan, seperti menambahkan habit baru, memperbarui data, menghapus, atau menandai sebagai selesai, akan langsung terlihat hasilnya di halaman ini tanpa perlu membuka ulang aplikasi. Dengan begitu, pengguna bisa langsung melihat perkembangan kebiasaan hariannya secara praktis dan real-time.
-   
-    ><img width="1918" height="1135" alt="image" src="https://github.com/user-attachments/assets/a0011825-b16d-4c0f-b4d3-acc35b6032e5" />
+### Login Page
+Pengguna dapat login menggunakan email dan password.
 
-2. Untuk menambahkan habit baru, pengguna dapat menekan ikon (+ ) yang berada di bagian pojok kanan bawah halaman utama. Tombol ini berfungsi sebagai akses cepat untuk menambah data baru.
+### Register Page
+Pengguna dapat membuat akun baru.
 
-   ><img width="1918" height="1135" alt="image" src="https://github.com/user-attachments/assets/a0011825-b16d-4c0f-b4d3-acc35b6032e5" />
+### Home Page
+Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
-   Setelah tombol ditekan, pengguna akan diarahkan ke halaman tambah habit. Pada halaman tersebut tersedia tiga kolom input, yaitu nama habit, kategori, dan target harian. Pengguna cukup mengisi ketiga bagian tersebut sesuai kebutuhan.
+### Habit Form Page
+Digunakan untuk menambahkan atau mengedit habit.
 
-   Jika semua data sudah diisi, pengguna dapat menekan tombol Tambah. Setelah itu, aplikasi akan kembali ke halaman utama dan habit yang baru dibuat akan langsung muncul di daftar. Dengan cara ini, proses penambahan habit terasa sederhana dan tidak memerlukan langkah yang rumit.
-   
-   ><img width="1919" height="1139" alt="image" src="https://github.com/user-attachments/assets/ccf95f08-b16e-4332-9533-d512fd33fee6" />
+---
 
-   Sebagai contoh, pada halaman tambah habit ini saya mengisi kolom Nama Habit dengan “Baca Buku”, lalu mengisi kategori Akademik, dan mengisi Target Harian dengan “10 Lembar”. Setelah semua kolom terisi dengan benar, langkah selanjutnya cukup menekan tombol Tambah.
+# 🔐 Nilai Tambah
 
-   ><img width="1919" height="1142" alt="image" src="https://github.com/user-attachments/assets/3e69d14a-9e7d-4288-83b7-23660eccdb71" />
+Beberapa fitur tambahan yang diterapkan dalam aplikasi ini:
 
-   Setelah tombol tersebut ditekan, aplikasi akan kembali ke halaman utama dan data habit yang baru saja ditambahkan akan langsung muncul di daftar.
+- Supabase Authentication (Login & Register)
+- Dark Mode & Light Mode
+- Progress Bar Habit
+- Search Habit
+- Filter Kategori
+- Snackbar Notification
+- Environment Variables (.env) untuk keamanan API Key
 
-   ><img width="1919" height="1142" alt="image" src="https://github.com/user-attachments/assets/19a96a29-9ab9-486a-9ee9-639d6b7e1e4c" />
-
-3. Untuk mengubah data habit, pengguna cukup menekan ikon pensil yang ada di sebelah kanan setiap item. Setelah ikon tersebut ditekan, aplikasi akan menampilkan halaman Edit Habit yang berisi data sebelumnya.
-
-   ><img width="1919" height="1142" alt="image" src="https://github.com/user-attachments/assets/a7bc3c7e-a286-4b24-8b01-fc7799db8ca7" />
-
-   Sebagai contoh, di sini saya mengubah habit “Baca Buku” menjadi “Baca Buku Pemrograman Java”, lalu mengganti target harian dari 10 lembar menjadi 12 lembar. Kolom-kolom yang ada sudah otomatis terisi dengan data lama, jadi kita tinggal mengubah bagian yang ingin diperbarui saja.
-
-   ><img width="1919" height="1141" alt="image" src="https://github.com/user-attachments/assets/d9df13d7-bb46-4df1-bbf7-987eb680582e" />
-
-   Setelah selesai melakukan perubahan, cukup tekan tombol Simpan. Aplikasi kemudian akan kembali ke halaman utama, dan data habit langsung diperbarui sesuai dengan perubahan yang sudah dibuat. Jadi proses edit terasa cepat dan praktis tanpa perlu menghapus dan membuat ulang habit dari awal.
-
-   ><img width="1919" height="1141" alt="image" src="https://github.com/user-attachments/assets/d21dba90-6b29-4fa4-85f4-8905a2b32d6f" />
-
-4. Untuk menghapus habit, pengguna cukup menekan ikon tong sampah yang ada di sebelah kanan setiap item. Tidak perlu masuk ke halaman lain, karena proses hapus bisa langsung dilakukan dari halaman utama.
-
-   ><img width="1918" height="1139" alt="image" src="https://github.com/user-attachments/assets/1bf1fec0-99b6-4e98-974c-62ae3940965d" />
-
-   Sebagai contoh, di sini saya menghapus habit Belajar Flutter dengan menekan ikon tong sampah pada baris tersebut. Setelah ditekan, habit tersebut langsung hilang dari daftar, dan jumlah progress juga otomatis menyesuaikan. Dengan cara ini, pengguna bisa dengan cepat menghapus habit yang sudah tidak diperlukan tanpa langkah yang rumit. Semua perubahan langsung terlihat di halaman utama, jadi tidak membingungkan dan tetap praktis digunakan.
-
-   ><img width="1919" height="1139" alt="image" src="https://github.com/user-attachments/assets/b95f96ae-0890-4521-adf0-6528bda7420a" />
-
-5. Untuk menandai habit yang sudah selesai dilakukan, pengguna cukup mencentang checkbox yang ada di sebelah kanan setiap item. Begitu checkbox diklik, habit tersebut langsung dianggap selesai.
-   
-    ><img width="1919" height="1139" alt="image" src="https://github.com/user-attachments/assets/b95f96ae-0890-4521-adf0-6528bda7420a" />
-
-    Setelah dicentang, progress di bagian atas otomatis bertambah. Misalnya, dari 0/3 menjadi 1/3 completed. Selain itu, akan muncul notifikasi kecil di bagian bawah layar yang memberi tahu bahwa habit tersebut berhasil diselesaikan.
-
-   ><img width="1919" height="1139" alt="image" src="https://github.com/user-attachments/assets/91242436-b188-494b-afba-668034166ea5" />
-
-   Jika semua habit dalam satu hari sudah dicentang, maka akan muncul notifikasi khusus sebagai bentuk apresiasi, seperti pesan bahwa semua habit hari ini sudah selesai. Progress bar juga akan terisi penuh sesuai jumlah habit yang telah diselesaikan.
-
-   Dengan fitur ini, pengguna bisa langsung melihat perkembangan kebiasaan hariannya secara real-time dan jadi lebih termotivasi untuk menyelesaikan semua targetnya.
-
-   ><img width="1918" height="1140" alt="image" src="https://github.com/user-attachments/assets/c6737eec-c87f-4a08-927d-692784663090" />
+---
 
 
+# 🔄 Alur Aplikasi
 
-   
+Berikut adalah alur penggunaan aplikasi **HabitBloom**:
 
+### 1️⃣ Welcome Page
 
+Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi serta tombol untuk melanjutkan ke halaman login.
 
+Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
 
-   
+---
 
+### 2️⃣ Login Page
 
+Setelah menekan tombol login, pengguna akan diarahkan ke **halaman Login**.
 
+Pada halaman ini pengguna harus memasukkan:
 
+- Email
+- Password
 
-   
+Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi.
 
-   
+Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
+
+---
+
+### 3️⃣ Register Page
+
+Pada halaman ini pengguna dapat membuat akun baru dengan mengisi:
+
+- Email
+- Password
+- Konfirmasi Password
+
+Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**.
+
+Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
+
+---
+
+### 4️⃣ Home Page
+
+Setelah login berhasil, pengguna akan diarahkan ke **halaman utama (Home Page)**.
+
+Pada halaman ini pengguna dapat melihat:
+
+- Daftar habit yang telah dibuat
+- Progress habit yang telah selesai
+- Fitur pencarian habit
+- Filter kategori habit
+
+Selain itu terdapat **progress bar** yang menunjukkan jumlah habit yang telah selesai dibandingkan total habit yang ada.
+
+---
+
+### 5️⃣ Tambah Habit
+
+Pengguna dapat menambahkan habit baru dengan menekan tombol **Floating Action Button (+)**.
+
+Pada halaman form, pengguna diminta mengisi:
+
+- Nama Habit
+- Kategori
+- Target Harian
+- Catatan (opsional)
+
+Setelah data disimpan, habit akan langsung muncul pada halaman utama.
+
+---
+
+### 6️⃣ Menandai Habit Selesai
+
+Setiap habit memiliki tombol **check**.
+
+Ketika tombol tersebut ditekan:
+
+- Habit akan ditandai sebagai selesai
+- Tampilan habit akan berubah
+- Progress habit akan diperbarui
+
+---
+
+### 7️⃣ Edit Habit
+
+Pengguna dapat mengedit habit dengan menekan ikon **edit**.
+
+Data habit akan muncul kembali pada halaman form sehingga pengguna dapat memperbarui informasi yang diperlukan.
+
+---
+
+### 8️⃣ Hapus Habit
+
+Habit yang tidak diperlukan dapat dihapus dengan menekan ikon **delete**.
+
+Aplikasi akan menampilkan **dialog konfirmasi** sebelum habit benar-benar dihapus dari database.
+
+---
+
+### 9️⃣ Logout
+
+Pengguna dapat keluar dari aplikasi dengan menekan tombol **Logout** pada menu profil.
+
+Setelah logout, pengguna akan kembali ke **halaman Welcome**.
