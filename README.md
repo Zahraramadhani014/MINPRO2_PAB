@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Completed-ff85c1?style=for-the-badge" />
 </p>
+
 <p align="center">
   <b>Habit Builder & Consistency Tracker App</b>
 </p>
@@ -42,59 +43,81 @@ Data kebiasaan disimpan menggunakan **Supabase Database**, sehingga semua data d
 
 Selain itu, aplikasi ini dilengkapi dengan **sistem autentikasi login dan register menggunakan Supabase Auth** serta mendukung **Light Mode dan Dark Mode** untuk meningkatkan kenyamanan pengguna.
 
+Selain membantu pengguna mencatat kebiasaan, HabitBloom juga dirancang dengan tampilan antarmuka yang sederhana dan mudah digunakan sehingga pengguna dapat mengelola habit mereka tanpa merasa rumit. Pengguna dapat menambahkan habit baru dengan menentukan nama kebiasaan, kategori, target harian, serta catatan tambahan jika diperlukan.
+
+Pada halaman utama aplikasi, seluruh habit yang telah dibuat akan ditampilkan dalam bentuk daftar sehingga pengguna dapat dengan mudah melihat aktivitas apa saja yang perlu dilakukan. Setiap habit juga dapat ditandai sebagai selesai ketika sudah dilakukan, sehingga pengguna dapat mengetahui sejauh mana progres kebiasaan yang telah mereka jalankan.
+
+Aplikasi ini juga menyediakan fitur untuk mengedit atau menghapus habit apabila pengguna ingin memperbarui target atau tidak lagi menjalankan kebiasaan tersebut. Dengan adanya fitur ini, pengguna dapat menyesuaikan daftar kebiasaan mereka sesuai kebutuhan.
+
+Melalui aplikasi HabitBloom, diharapkan pengguna dapat lebih konsisten dalam menjalankan kebiasaan positif setiap hari, memantau perkembangan mereka, serta membangun rutinitas yang lebih produktif secara bertahap.
+
 ---
 
 # 🎯 Fitur Aplikasi
 
-### 1️⃣ Login & Register
+### 1️⃣ Halaman Welcome
 
-Pengguna dapat membuat akun baru dan login menggunakan email dan password melalui Supabase Authentication.
+Saat aplikasi pertama kali dibuka, pengguna akan melihat halaman Welcome yang menampilkan nama aplikasi HabitBloom, tagline aplikasi, tombol login untuk masuk ke halaman login, serta link register untuk masuk ke halaman registrasi akun. Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna mulai menggunakan aplikasi.
 
-### 2️⃣ Tambah Habit (Create)
+### 2️⃣ Login & Register
 
-Pengguna dapat menambahkan kebiasaan baru dengan mengisi:
-- Nama Habit
-- Kategori
-- Target Harian
-- Catatan
+Aplikasi menyediakan sistem autentikasi menggunakan Supabase Authentication. Pengguna yang sudah memiliki akun dapat langsung login menggunakan email dan password. Jika belum memiliki akun, pengguna dapat membuat akun baru melalui halaman Register dengan mengisi email, password, dan konfirmasi password.
 
-### 3️⃣ Tampilkan Habit (Read)
+### 3️⃣ Tambah Habit (Create)
 
-Semua habit yang tersimpan akan ditampilkan dalam bentuk daftar pada halaman utama.
+Pengguna dapat menambahkan kebiasaan baru melalui halaman Tambah Habit. Pada halaman ini pengguna diminta mengisi beberapa informasi seperti Nama Habit, Kategori Habit, Target Harian, Catatan tambahan (opsional). Setelah data disimpan, habit tersebut akan langsung muncul pada daftar habit di halaman utama.
 
-### 4️⃣ Edit Habit (Update)
+### 4️⃣ Tampilkan Habit (Read)
 
-Pengguna dapat mengubah data habit yang sudah ada jika terdapat kesalahan atau perubahan target.
+Semua habit yang sudah dibuat akan ditampilkan pada halaman utama (Home Page) dalam bentuk daftar. Setiap habit menampilkan informasi seperti nama habit, kategori, target yang harus dicapai dan catatan apabila pengguna mengisi kolom catatan pada saat menambah habit. Dengan tampilan ini pengguna dapat dengan mudah melihat kebiasaan apa saja yang perlu dilakukan pada hari tersebut.
 
-### 5️⃣ Hapus Habit (Delete)
+### 5️⃣ Edit Habit (Update)
 
-Habit yang sudah tidak diperlukan dapat dihapus dari daftar.
+Jika terdapat kesalahan atau pengguna ingin mengubah target habit, data habit dapat diperbarui melalui fitur Edit Habit. Ketika tombol edit ditekan, data habit yang sebelumnya sudah tersimpan akan ditampilkan kembali pada form sehingga pengguna dapat mengubah informasi yang diperlukan.
 
-### 6️⃣ Checklist Habit
+### 6️⃣ Hapus Habit (Delete)
 
-Setiap habit memiliki tombol check untuk menandai bahwa habit telah selesai dilakukan pada hari tersebut.
+Habit yang sudah tidak ingin dilakukan lagi dapat dihapus dari daftar. Fitur ini membantu pengguna menjaga daftar habit tetap relevan dengan kebiasaan yang sedang dijalankan.
 
-### 7️⃣ Progress Habit
+### 7️⃣ Checklist Habit
 
-Aplikasi menampilkan progress jumlah habit yang telah selesai dibandingkan dengan total habit.
+Setiap habit memiliki tombol checklist yang dapat digunakan untuk menandai bahwa habit tersebut sudah selesai dilakukan. Ketika habit dicentang, status habit akan berubah menjadi selesai sehingga pengguna dapat mengetahui kebiasaan mana saja yang sudah dikerjakan.
 
-### 8️⃣ Search Habit
+### 8️⃣ Progress Habit
 
-Pengguna dapat mencari habit dengan mengetik nama habit pada kolom pencarian.
+Aplikasi juga menampilkan progress penyelesaian habit pada bagian atas halaman utama. Progress ini menunjukkan perbandingan antara jumlah habit yang telah selesai dengan total habit yang ada, sehingga pengguna dapat melihat sejauh mana konsistensi mereka dalam menjalankan kebiasaan.
 
-### 9️⃣ Filter Kategori
-Habit dapat difilter berdasarkan kategori seperti:
-- Akademik
-- Kesehatan
-- Fitness
-- Produktivitas
-- Mental Health
-- Personal Development
-- Morning Routine
-- Spiritual
+### 9️⃣ Search Habit
 
-### 🔟 Dark Mode & Light Mode
-Aplikasi mendukung tema terang dan gelap yang dapat diubah melalui tombol di aplikasi.
+Untuk memudahkan pengguna menemukan habit tertentu, aplikasi menyediakan fitur pencarian. Pengguna cukup mengetik nama habit pada kolom pencarian, dan aplikasi akan menampilkan habit yang sesuai dengan kata kunci tersebut.
+
+### 🔟 Filter Kategori Habit
+
+Habit juga dapat difilter berdasarkan kategori tertentu seperti Akademik, Kesehatan, Fitness, Produktivitas, Mental Health, Personal Development, Morning Routine, Spiritual. Fitur ini membantu pengguna melihat habit berdasarkan jenis aktivitas yang ingin difokuskan.
+
+### 1️⃣1️⃣ Statistik Habit
+
+Pada halaman utama juga terdapat informasi statistik seperti jumlah habit yang telah selesai dan persentase keberhasilan habit. Informasi ini membantu pengguna memantau perkembangan konsistensi mereka setiap hari.
+
+### 1️⃣2️⃣ Greeting Message 
+
+Pada halaman utama aplikasi terdapat pesan sapaan yang muncul secara otomatis ketika pengguna membuka aplikasi, misalnya seperti “Good Morning”. Pesan ini dibuat agar aplikasi terasa lebih personal dan ramah bagi pengguna. Selain itu, nama pengguna juga ditampilkan pada sapaan tersebut sehingga pengguna merasa aplikasi benar-benar ditujukan untuk mereka.
+
+### 1️⃣3️⃣ Motivational Quote
+
+Di bagian atas halaman utama juga terdapat kutipan motivasi singkat yang bertujuan untuk memberikan semangat kepada pengguna dalam menjalankan kebiasaan mereka. Pesan ini diharapkan dapat membantu pengguna tetap termotivasi untuk menyelesaikan habit yang sudah mereka buat setiap harinya.
+
+### 1️⃣4️⃣ Reset Form pada Tambah Habit
+
+Pada halaman tambah habit terdapat tombol **Reset Form** yang berfungsi untuk menghapus seluruh input yang sudah diisi oleh pengguna pada form. Fitur ini berguna jika pengguna ingin mengulang pengisian data dari awal tanpa harus menghapus setiap kolom secara manual.
+
+### 1️⃣5️⃣ Preview Habit Card di halaman form
+
+Saat pengguna mengisi form untuk menambahkan atau mengedit habit, aplikasi menampilkan **preview habit card** di bagian atas form. Preview ini akan menampilkan gambaran bagaimana habit tersebut akan terlihat di halaman utama. Dengan adanya preview ini, pengguna dapat langsung melihat hasil dari data yang mereka isi sebelum habit disimpan.
+
+### 1️⃣6️⃣ Dark Mode & Light Mode
+
+Aplikasi HabitBloom mendukung dua tema tampilan, yaitu Light Mode dan Dark Mode. Pengguna dapat mengganti tema sesuai preferensi agar tampilan aplikasi lebih nyaman digunakan dalam berbagai kondisi pencahayaan.
 
 ---
 
@@ -163,18 +186,33 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
 # 📂 Struktur Project
 
   <img width="285" height="1006" alt="Image" src="https://github.com/user-attachments/assets/b0ac39a7-93ad-4df8-8e7b-938c44d4db10" />
+  
+  Struktur project pada aplikasi **HabitBloom** mengikuti struktur standar dari project Flutter. Saat project Flutter dibuat, beberapa folder seperti
+  android`, `ios`, `linux`, `macos`, `web`, dan `windows` akan otomatis terbentuk. Folder-folder ini digunakan untuk mendukung aplikasi agar bisa dijalankan di berbagai platform, sehingga saya tidak melakukan banyak perubahan pada bagian tersebut karena lebih berfungsi untuk konfigurasi sistem.
 
-  Project ini menggunakan struktur standar dari Flutter, sehingga beberapa folder dan file sudah otomatis terbentuk sejak awal pembuatan project. Bagian yang paling utama terdapat pada folder lib, karena di dalam folder inilah seluruh kode aplikasi ditulis. File
-  main.dart yang berada di dalam folder tersebut menjadi titik awal saat aplikasi dijalankan.
-    
-  Selain itu, terdapat folder seperti android, ios, web, windows, linux, dan macos yang berfungsi sebagai konfigurasi untuk masing-masing platform. Hal ini memungkinkan aplikasi dapat dijalankan di berbagai sistem operasi karena Flutter mendukung pengembangan multi
-  platform dalam satu project yang sama.
-    
-  Folder build berisi hasil proses kompilasi aplikasi dan biasanya dibuat secara otomatis oleh sistem, sehingga tidak perlu diubah secara manual. Kemudian terdapat file pubspec.yaml yang berfungsi untuk mengatur dependency atau package yang digunakan dalam project
-  termasuk konfigurasi dasar aplikasi. File pubspec.lock digunakan untuk mencatat versi dependency yang terpasang agar tetap konsisten saat project dijalankan di perangkat lain.
-    
-  Selain itu, terdapat file .gitignore yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub, seperti file hasil build. Terakhir, file README.md digunakan sebagai dokumentasi project yang berisi penjelasan mengenai
-  aplikasi, fitur, serta struktur yang digunakan.
+  Sebagian besar kode yang saya kerjakan berada di dalam folder **lib**. Folder ini merupakan bagian utama dari aplikasi karena di sinilah seluruh logika program dan tampilan aplikasi ditulis.
+
+  Di dalam folder `lib`, terdapat beberapa folder yang digunakan untuk memisahkan kode berdasarkan fungsinya agar lebih rapi dan mudah dikelola.
+
+  Folder **config** digunakan untuk menyimpan file konfigurasi yang berkaitan dengan koneksi aplikasi ke layanan eksternal. Pada project ini terdapat file `supabase_config.dart` yang berfungsi untuk menghubungkan aplikasi dengan Supabase sebagai backend database dan authentication.
+
+  Folder **models** digunakan untuk menyimpan struktur data yang digunakan di dalam aplikasi. Pada folder ini terdapat file `habit_model.dart` yang berisi model data habit seperti nama habit, kategori, target, catatan, serta status apakah habit tersebut sudah selesai atau belum.
+
+  Folder **pages** berisi halaman-halaman utama yang ditampilkan kepada pengguna. Beberapa halaman yang terdapat pada folder ini antara lain  `welcome_page.dart` sebagai halaman awal aplikasi, `login_page.dart` dan `register_page.dart` untuk proses autentikasi pengguna, `home_page.dart` sebagai halaman utama yang menampilkan daftar habit, serta `habit_form_page.dart` yang digunakan untuk menambahkan atau mengedit habit.
+
+  Selanjutnya terdapat folder **services** yang berfungsi untuk menangani proses komunikasi antara aplikasi dengan database Supabase. Pada folder ini terdapat file `habit_services.dart` yang berisi fungsi-fungsi untuk melakukan operasi CRUD seperti menambahkan habit, mengambil data habit, memperbarui habit, dan menghapus habit dari database.
+
+  Folder **widgets** digunakan untuk menyimpan komponen UI yang digunakan kembali di beberapa bagian aplikasi. Pada project ini terdapat file `habit_card.dart` yang berfungsi untuk menampilkan tampilan setiap item habit pada daftar habit di halaman utama.
+
+  Selain folder-folder tersebut, terdapat juga file **main.dart** yang merupakan titik awal ketika aplikasi dijalankan. Pada file ini diatur konfigurasi awal aplikasi seperti tema, routing halaman, serta inisialisasi koneksi ke Supabase.
+
+  Di luar folder `lib`, terdapat juga folder **assets** yang digunakan untuk menyimpan file tambahan seperti gambar background yang digunakan pada tampilan aplikasi.
+
+  Selain itu terdapat beberapa file konfigurasi penting seperti `pubspec.yaml` yang digunakan untuk mengatur dependency atau library yang digunakan pada project Flutter serta mendaftarkan assets yang digunakan dalam aplikasi. Selain itu terdapat juga file `.env` yang digunakan untuk menyimpan konfigurasi sensitif seperti Supabase URL dan API Key. Dengan menggunakan file ini, informasi penting tersebut tidak langsung dituliskan di dalam source code sehingga lebih aman ketika project diunggah ke GitHub atau dibagikan kepada orang lain.
+
+  Project ini juga menggunakan file `.gitignore` yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub. Biasanya file yang diabaikan adalah file build, file konfigurasi lokal, serta file yang berisi data sensitif seperti `.env`. Dengan adanya `.gitignore`, repository menjadi lebih rapi dan hanya berisi file yang benar-benar diperlukan untuk menjalankan project.
+
+  Dengan pembagian struktur seperti ini, kode program menjadi lebih terorganisir, mudah dibaca, serta memudahkan proses pengembangan dan pemeliharaan aplikasi di kemudian hari.
 
 # 🗄 Struktur Database
 
