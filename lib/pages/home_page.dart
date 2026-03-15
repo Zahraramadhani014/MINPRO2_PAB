@@ -704,18 +704,111 @@ class _HomePageState extends State<HomePage> {
                                                                   .signOut();
 
                                                               if (!context
-                                                                  .mounted) {
+                                                                  .mounted)
                                                                 return;
-                                                              }
 
-                                                              Navigator.pushAndRemoveUntil(
-                                                                context,
-                                                                MaterialPageRoute(
-                                                                  builder: (_) =>
-                                                                      const WelcomePage(),
-                                                                ),
-                                                                (route) =>
+                                                              showDialog(
+                                                                context:
+                                                                    context,
+                                                                barrierDismissible:
                                                                     false,
+                                                                builder: (context) {
+                                                                  Future.delayed(
+                                                                    const Duration(
+                                                                      seconds:
+                                                                          2,
+                                                                    ),
+                                                                    () {
+                                                                      Navigator.pushAndRemoveUntil(
+                                                                        context,
+                                                                        MaterialPageRoute(
+                                                                          builder: (_) =>
+                                                                              const WelcomePage(),
+                                                                        ),
+                                                                        (
+                                                                          route,
+                                                                        ) =>
+                                                                            false,
+                                                                      );
+                                                                    },
+                                                                  );
+
+                                                                  return Dialog(
+                                                                    shape: RoundedRectangleBorder(
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                            25,
+                                                                          ),
+                                                                    ),
+                                                                    child: Container(
+                                                                      padding:
+                                                                          const EdgeInsets.all(
+                                                                            25,
+                                                                          ),
+                                                                      decoration: BoxDecoration(
+                                                                        color: Theme.of(
+                                                                          context,
+                                                                        ).cardColor,
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(
+                                                                              25,
+                                                                            ),
+                                                                      ),
+                                                                      child: Column(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.min,
+                                                                        children: [
+                                                                          Container(
+                                                                            padding: const EdgeInsets.all(
+                                                                              15,
+                                                                            ),
+                                                                            decoration: const BoxDecoration(
+                                                                              color: Color(
+                                                                                0xFFFFE4EC,
+                                                                              ),
+                                                                              shape: BoxShape.circle,
+                                                                            ),
+                                                                            child: const Icon(
+                                                                              Icons.favorite,
+                                                                              color: Color(
+                                                                                0xFFF06292,
+                                                                              ),
+                                                                              size: 40,
+                                                                            ),
+                                                                          ),
+
+                                                                          const SizedBox(
+                                                                            height:
+                                                                                20,
+                                                                          ),
+
+                                                                          Text(
+                                                                            "Terima Kasih 💖",
+                                                                            style: GoogleFonts.poppins(
+                                                                              fontSize: 20,
+                                                                              fontWeight: FontWeight.bold,
+                                                                            ),
+                                                                          ),
+
+                                                                          const SizedBox(
+                                                                            height:
+                                                                                10,
+                                                                          ),
+
+                                                                          Text(
+                                                                            "Terima kasih telah menggunakan HabitBloom.\nSampai jumpa lagi!",
+                                                                            textAlign:
+                                                                                TextAlign.center,
+                                                                            style: GoogleFonts.poppins(
+                                                                              fontSize: 14,
+                                                                              color: Colors.grey[700],
+                                                                            ),
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
                                                               );
                                                             },
 
@@ -1065,7 +1158,9 @@ class _HomePageState extends State<HomePage> {
 
                     Column(
                       children: [
-                        if (filteredHabits.isEmpty) ...[
+                        if (filteredHabits.isEmpty &&
+                            searchQuery.isEmpty &&
+                            selectedCategory == "Semua") ...[
                           const SizedBox(height: 80),
 
                           Icon(
@@ -1076,15 +1171,11 @@ class _HomePageState extends State<HomePage> {
 
                           const SizedBox(height: 20),
 
-                          Center(
-                            child: Text(
-                              selectedCategory == "Semua"
-                                  ? "Belum ada habit"
-                                  : "Tidak ada habit untuk kategori ini",
-                              style: GoogleFonts.poppins(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                          Text(
+                            "Belum ada habit",
+                            style: GoogleFonts.poppins(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
 
@@ -1097,6 +1188,121 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 14,
                               color: Colors.grey,
                             ),
+                          ),
+
+                          const SizedBox(height: 40),
+                        ],
+
+                        if (filteredHabits.isEmpty &&
+                            searchQuery.isNotEmpty) ...[
+                          const SizedBox(height: 80),
+
+                          Icon(
+                            Icons.search_off,
+                            size: 90,
+                            color: Colors.grey.shade400,
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          Text(
+                            "Habit tidak ditemukan",
+                            style: GoogleFonts.poppins(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+
+                          const SizedBox(height: 8),
+
+                          Text(
+                            "Coba cari dengan kata lain",
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              color: Colors.grey,
+                            ),
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          ElevatedButton.icon(
+                            icon: const Icon(Icons.refresh),
+                            label: Text(
+                              "Reset Pencarian",
+                              style: GoogleFonts.poppins(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.pink,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                searchQuery = "";
+                              });
+                            },
+                          ),
+
+                          const SizedBox(height: 40),
+                        ],
+
+                        if (filteredHabits.isEmpty &&
+                            searchQuery.isEmpty &&
+                            selectedCategory != "Semua") ...[
+                          const SizedBox(height: 80),
+
+                          Icon(
+                            Icons.category_outlined,
+                            size: 90,
+                            color: Colors.purple.shade200,
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          Text(
+                            "Tidak ada habit untuk kategori ini",
+                            style: GoogleFonts.poppins(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+
+                          const SizedBox(height: 8),
+
+                          Text(
+                            "Coba pilih kategori lain",
+                            style: GoogleFonts.poppins(
+                              fontSize: 14,
+                              color: Colors.grey,
+                            ),
+                          ),
+
+                          const SizedBox(height: 20),
+
+                          ElevatedButton.icon(
+                            icon: const Icon(Icons.filter_alt_off),
+                            label: Text(
+                              "Reset Filter",
+                              style: GoogleFonts.poppins(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.pink,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                selectedCategory = "Semua";
+                              });
+                            },
                           ),
 
                           const SizedBox(height: 40),
