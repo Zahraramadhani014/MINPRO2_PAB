@@ -266,7 +266,7 @@ Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | Zahraturramadhani |
 
 ### Habit Form Page
 
