@@ -192,7 +192,7 @@ Aplikasi **HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukun
   <img width="285" height="1006" alt="Image" src="https://github.com/user-attachments/assets/b0ac39a7-93ad-4df8-8e7b-938c44d4db10" />
   
   Struktur project pada aplikasi **HabitBloom** mengikuti struktur standar dari project Flutter. Saat project Flutter dibuat, beberapa folder seperti
-  android`, `ios`, `linux`, `macos`, `web`, dan `windows` akan otomatis terbentuk. Folder-folder ini digunakan untuk mendukung aplikasi agar bisa dijalankan di berbagai platform, sehingga saya tidak melakukan banyak perubahan pada bagian tersebut karena lebih berfungsi untuk konfigurasi sistem.
+  `android`, `ios`, `linux`, `macos`, `web`, dan `windows` akan otomatis terbentuk. Folder-folder ini digunakan untuk mendukung aplikasi agar bisa dijalankan di berbagai platform, sehingga saya tidak melakukan banyak perubahan pada bagian tersebut karena lebih berfungsi untuk konfigurasi sistem.
 
   Sebagian besar kode yang saya kerjakan berada di dalam folder **lib**. Folder ini merupakan bagian utama dari aplikasi karena di sinilah seluruh logika program dan tampilan aplikasi ditulis.
 
@@ -220,7 +220,7 @@ Aplikasi **HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukun
 
 # 🗄 Struktur Database
 
-Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpan seluruh data kebiasaan yang dibuat oleh pengguna. Data tersebut disimpan dalam sebuah tabel bernama **`habits`**. Setiap habit yang dibuat akan memiliki beberapa informasi seperti nama habit, kategori, target harian, catatan, serta status apakah habit tersebut sudah diselesaikan atau belum. Berikut merupakan struktur tabel yang digunakan untuk menyimpan data habit pada aplikasi HabitBloom.
+Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpan seluruh data kebiasaan yang dibuat oleh pengguna. Data tersebut disimpan dalam sebuah tabel bernama `habits`. Setiap habit yang dibuat akan memiliki beberapa informasi seperti nama habit, kategori, target harian, catatan, serta status apakah habit tersebut sudah diselesaikan atau belum. Berikut merupakan struktur tabel yang digunakan untuk menyimpan data habit pada aplikasi HabitBloom.
 
 | Kolom Database | Tipe Data | Keterangan |
 |---------------|-----------|------------|
@@ -237,19 +237,48 @@ Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpa
 # 📱 Tampilan Aplikasi
 
 ### Welcome Page
+
 Halaman pertama yang muncul ketika aplikasi dibuka.
 
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
+
 ### Login Page
+
 Pengguna dapat login menggunakan email dan password.
 
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
+
 ### Register Page
+
 Pengguna dapat membuat akun baru.
 
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
+
 ### Home Page
+
 Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
+
 ### Habit Form Page
+
 Digunakan untuk menambahkan atau mengedit habit.
+
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
+
+| Light Mode | Dark Mode |
+|:----------|:-----|
+| Nama | Zahraturramadhani |
 
 ---
 
