@@ -603,6 +603,8 @@ data di home page berubah sesuai data yang kita edit
 
 Habit yang tidak diperlukan dapat dihapus dengan menekan ikon **delete**. Aplikasi akan menampilkan **dialog konfirmasi** sebelum habit benar-benar dihapus dari database.
 
+<img width="1600" height="860" alt="Image" src="https://github.com/user-attachments/assets/c71e0ef8-6ec2-48bd-9039-db301ff48889" />
+
 sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB", maka akan muncul pop up 2 pilihan
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/7223bd08-301d-4bbd-ba81-fcf8ad106cf5" />
