@@ -678,11 +678,11 @@ Selain itu, pada halaman edit habit juga terdapat beberapa validasi untuk memast
 
     ><img width="1919" height="1027" alt="Image" src="https://github.com/user-attachments/assets/ef9cd80a-16c4-4922-9cca-31a3640f7371" />
 
-3.  Tombol Back pada AppBar
+3. Tombol Back pada AppBar
   
-   Fungsi tombol Back pada AppBar juga sama seperti tombol Batal pada form. Jika terdapat perubahan yang belum disimpan, maka sistem akan menampilkan konfirmasi terlebih dahulu sebelum pengguna keluar dari halaman edit.
-   
-    ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/e051fd43-7a6a-45b2-9dd9-d6dd070d6668" />
+    Fungsi tombol Back pada AppBar juga sama seperti tombol Batal pada form. Jika terdapat perubahan yang belum disimpan, maka sistem akan menampilkan konfirmasi terlebih dahulu sebelum pengguna keluar dari halaman edit.
+  
+   ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/e051fd43-7a6a-45b2-9dd9-d6dd070d6668" />
      
 4. Keluar tanpa melakukan perubahan
 
@@ -705,7 +705,7 @@ Pada gambar ini terlihat daftar habit pada halaman utama. Setiap habit memiliki 
 
 <img width="1600" height="860" alt="Image" src="https://github.com/user-attachments/assets/c71e0ef8-6ec2-48bd-9039-db301ff48889" />
 
-Sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB", Pada gambar ini ditampilkan popup konfirmasi penghapusan habit. Dialog ini muncul untuk memastikan bahwa pengguna tidak sengaja menghapus data. Pada dialog tersebut terdapat dua pilihan, yaitu Batal untuk membatalkan proses penghapusan dan Ya, Hapus untuk melanjutkan penghapusan habit.
+Sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB". Pada gambar ini ditampilkan popup konfirmasi penghapusan habit. Dialog ini muncul untuk memastikan bahwa pengguna tidak sengaja menghapus data. Pada dialog tersebut terdapat dua pilihan, yaitu Batal untuk membatalkan proses penghapusan dan Ya, Hapus untuk melanjutkan penghapusan habit.
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/7223bd08-301d-4bbd-ba81-fcf8ad106cf5" />
 
@@ -715,13 +715,15 @@ Apabila pengguna memilih tombol Batal, maka proses penghapusan akan dibatalkan d
 
 ><img width="1918" height="1027" alt="Image" src="https://github.com/user-attachments/assets/b0e76449-60f3-4f94-9bbe-f948627f5cc5" />
 
-b.  Jika pengguna memilih tombol Ya, Hapus, maka habit akan dihapus dari daftar habit. Setelah itu sistem akan menampilkan popup notifikasi yang menyatakan bahwa habit berhasil dihapus dari sistem.
+b. Jika Memilih Ya, Hapus
+
+Jika pengguna memilih tombol Ya, Hapus, maka habit akan dihapus dari daftar habit. Setelah itu sistem akan menampilkan popup notifikasi yang menyatakan bahwa habit berhasil dihapus dari sistem.
 
 ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f895d4be-ed10-46dd-9334-9cf35b8477b1" />
 
 Setelah proses penghapusan berhasil dilakukan, data habit tidak lagi muncul pada daftar habit di halaman utama. Daftar habit akan otomatis diperbarui sesuai dengan data yang tersisa di dalam sistem.
 
-
+><img width="1600" height="857" alt="Image" src="https://github.com/user-attachments/assets/a9361869-ce9b-432f-bfd8-0e7acd7d453f" />
 
 ---
 
@@ -733,10 +735,12 @@ Pada bagian ini juga ditampilkan contoh popup ketika pengguna melakukan logout d
 
 <img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/ca413036-5c8d-41cb-82da-298d1df999d0" />
 
-akan muncul pop up 2 pilihan:
+Akan muncul pop up 2 pilihan:
 
-a. Jika memilih batal maka pengguna akan tetap berada di homepage aplikasi
+><img width="1600" height="858" alt="Image" src="https://github.com/user-attachments/assets/d0ea0a0f-b368-4e15-a5e6-c9e4d5408de0" />
 
-b. jika ya,logout maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome
+a. Jika memilih batal maka pengguna akan tetap berada di homepage aplikasi.
+
+b. Jika ya,logout maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/727323d6-573f-4644-acc5-cfd1d0200570" />
