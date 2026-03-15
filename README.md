@@ -250,7 +250,7 @@ Pengguna dapat login menggunakan email dan password.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> | Zahraturramadhani |
 
 ### Register Page
 
