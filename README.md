@@ -266,7 +266,7 @@ Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | Zahraturramadhani |
+| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | <img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/3aff687a-f127-4841-a001-5187e12b63bb" /> |
 
 ### Habit Form Page
 
