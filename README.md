@@ -266,15 +266,19 @@ Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | <img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/3aff687a-f127-4841-a001-5187e12b63bb" /> |
+| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/3aff687a-f127-4841-a001-5187e12b63bb" /> |
 
 ### Habit Form Page
 
 Digunakan untuk menambahkan atau mengedit habit.
 
+a. Form Tambah Habit
+
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" /> | Zahraturramadhani |
+
+b. Form Edit Habit
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
