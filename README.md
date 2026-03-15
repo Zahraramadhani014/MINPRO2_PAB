@@ -481,17 +481,17 @@ data muncul di list habit
 
    ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/816fb19f-38da-4d84-b72b-6ec43246bf84" />
 
-3. reset form muncul notif 2 pilihan 
+3. reset form muncul notif 2 pilihan
 
-  ><img width="1918" height="1026" alt="Image" src="https://github.com/user-attachments/assets/828c36c7-a9e0-4852-8ac1-68b62ba429d7" />
+   ><img width="1918" height="1026" alt="Image" src="https://github.com/user-attachments/assets/828c36c7-a9e0-4852-8ac1-68b62ba429d7" />
 
-  -  klik no, form tetap
-    
-    ><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/25263b18-be00-4e5a-bc47-fe1bab33cbe1" />
+   - klik no, form tetap
+   
+     ><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/25263b18-be00-4e5a-bc47-fe1bab33cbe1" />
 
-  - klik yes, form tereset dan muncul notif
+   - klik yes, form tereset dan muncul notif
 
-    ><img width="1915" height="1034" alt="Image" src="https://github.com/user-attachments/assets/b12b0055-cd17-4fe8-9df5-e0d2506f44e9" />
+     ><img width="1915" height="1034" alt="Image" src="https://github.com/user-attachments/assets/b12b0055-cd17-4fe8-9df5-e0d2506f44e9" />
 
 4. Jika klik back pada appbar disaat data belum ke tambah
 
@@ -509,13 +509,28 @@ data muncul di list habit
 
 ### 6️⃣ Menandai Habit Selesai
 
-Setiap habit memiliki tombol **check**.
+Setiap habit memiliki tombol **check**. Ketika tombol tersebut ditekan Habit akan ditandai sebagai selesai, Tampilan habit akan berubah, dan Progress habit akan diperbarui.
 
-Ketika tombol tersebut ditekan:
+untuk menandai habit yang sudah selesai pengguna tinggal klik tombol **check** berbentuk bulat yang ada disetiap habit
 
-- Habit akan ditandai sebagai selesai
-- Tampilan habit akan berubah
-- Progress habit akan diperbarui
+><img width="1919" height="140" alt="Image" src="https://github.com/user-attachments/assets/3e6ce4c9-1df7-44a5-ab3d-2757e5f32f4a" />
+
+- jika sudah menandai habit maka langsung masuk ke list completed today dan muncul snackbar, seperti gambar dibawah
+
+  ><img width="1918" height="427" alt="Image" src="https://github.com/user-attachments/assets/8cf4f06a-c7c7-4609-8fa4-d48194ca3357" />
+  
+  habit yang telah diselesaikan akan merubah progres bar dan statistik completed yang awalnya begini
+
+  ><img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/4311c96e-5ff1-4b56-94c3-cf6f8586b216" />
+  
+  jadi begini
+
+  ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/b65f866a-412c-4e97-82d5-2809173fab68" />
+
+- jika pengguna ingin kembali memakai habit nya, tinggal uncheck checkbox nya maka akan hilang dari completed today dan kembali ke today habit
+
+  ><img width="1916" height="1030" alt="Image" src="https://github.com/user-attachments/assets/f508236e-a747-4cf7-b345-3442422481cc" />
+
 
 ---
 
