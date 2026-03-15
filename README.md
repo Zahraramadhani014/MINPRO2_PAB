@@ -282,7 +282,7 @@ b. Form Edit Habit
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" /> | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/fa23fc1e-e0f0-475a-b340-da85d11a5631" /> |
 
 ---
 
