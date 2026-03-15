@@ -33,13 +33,13 @@
 
 # 📌 Deskripsi Aplikasi
 
-**HabitBloom** merupakan aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna membangun kebiasaan positif serta memantau konsistensi aktivitas harian.
+**HabitBloom** merupakan aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna membangun kebiasaan positif serta menjaga konsistensi aktivitas harian.
 
 Aplikasi ini memungkinkan pengguna untuk mencatat berbagai kebiasaan yang ingin dilakukan setiap hari, seperti belajar, olahraga, membaca buku, atau aktivitas produktif lainnya. Setiap kebiasaan dapat ditambahkan, diedit, maupun dihapus secara fleksibel.
 
-HabitBloom juga menyediakan fitur **progress tracking** yang menampilkan jumlah kebiasaan yang telah diselesaikan setiap hari sehingga pengguna dapat melihat perkembangan konsistensi mereka.
+HabitBloom juga menyediakan fitur **progress tracking** yang menampilkan jumlah kebiasaan yang telah diselesaikan oleh pengguna. Dengan fitur ini, pengguna dapat melihat perkembangan konsistensi mereka dalam menjalankan habit setiap hari.
 
-Data kebiasaan disimpan menggunakan **Supabase Database**, sehingga semua data dapat dikelola secara dinamis menggunakan operasi CRUD (Create, Read, Update, Delete).
+Data kebiasaan yang dibuat oleh pengguna akan disimpan menggunakan **Supabase Database**, sehingga data tersebut dapat dikelola secara dinamis melalui operasi **CRUD** (Create, Read, Update, Delete).
 
 Selain itu, aplikasi ini dilengkapi dengan **sistem autentikasi login dan register menggunakan Supabase Auth** serta mendukung **Light Mode dan Dark Mode** untuk meningkatkan kenyamanan pengguna.
 
@@ -65,7 +65,7 @@ Aplikasi menyediakan sistem autentikasi menggunakan Supabase Authentication. Pen
 
 ### 3️⃣ Tambah Habit (Create)
 
-Pengguna dapat menambahkan kebiasaan baru melalui halaman Tambah Habit. Pada halaman ini pengguna diminta mengisi beberapa informasi seperti Nama Habit, Kategori Habit, Target Harian, Catatan tambahan (opsional). Setelah data disimpan, habit tersebut akan langsung muncul pada daftar habit di halaman utama.
+Pengguna dapat menambahkan kebiasaan baru melalui halaman Tambah Habit. Pada halaman ini pengguna diminta mengisi beberapa informasi seperti Nama Habit, Kategori Habit, Target Harian, Catatan tambahan (opsional). Setelah data disimpan, habit tersebut akan langsung muncul pada daftar habit di halaman utama (Home Page).
 
 ### 4️⃣ Tampilkan Habit (Read)
 
@@ -73,7 +73,7 @@ Semua habit yang sudah dibuat akan ditampilkan pada halaman utama (Home Page) da
 
 ### 5️⃣ Edit Habit (Update)
 
-Jika terdapat kesalahan atau pengguna ingin mengubah target habit, data habit dapat diperbarui melalui fitur Edit Habit. Ketika tombol edit ditekan, data habit yang sebelumnya sudah tersimpan akan ditampilkan kembali pada form sehingga pengguna dapat mengubah informasi yang diperlukan.
+Jika terdapat kesalahan atau pengguna ingin mengubah target habit, data habit dapat diperbarui melalui halaman Edit Habit. Ketika tombol edit ditekan, data habit yang sebelumnya sudah tersimpan akan ditampilkan kembali pada form sehingga pengguna dapat mengubah informasi yang diperlukan.
 
 ### 6️⃣ Hapus Habit (Delete)
 
@@ -85,7 +85,7 @@ Setiap habit memiliki tombol checklist yang dapat digunakan untuk menandai bahwa
 
 ### 8️⃣ Progress Habit
 
-Aplikasi juga menampilkan progress penyelesaian habit pada bagian atas halaman utama. Progress ini menunjukkan perbandingan antara jumlah habit yang telah selesai dengan total habit yang ada, sehingga pengguna dapat melihat sejauh mana konsistensi mereka dalam menjalankan kebiasaan.
+Aplikasi juga menampilkan progress penyelesaian habit pada bagian atas halaman utama (Home Page). Progress ini menunjukkan perbandingan antara jumlah habit yang telah selesai dengan total habit yang ada, sehingga pengguna dapat melihat sejauh mana konsistensi mereka dalam menjalankan kebiasaan.
 
 ### 9️⃣ Search Habit
 
@@ -97,15 +97,15 @@ Habit juga dapat difilter berdasarkan kategori tertentu seperti Akademik, Keseha
 
 ### 1️⃣1️⃣ Statistik Habit
 
-Pada halaman utama juga terdapat informasi statistik seperti jumlah habit yang telah selesai dan persentase keberhasilan habit. Informasi ini membantu pengguna memantau perkembangan konsistensi mereka setiap hari.
+Pada halaman utama (Home Page) juga terdapat informasi statistik seperti jumlah habit yang telah selesai dan persentase keberhasilan habit. Informasi ini membantu pengguna memantau perkembangan konsistensi mereka setiap hari.
 
 ### 1️⃣2️⃣ Greeting Message 
 
-Pada halaman utama aplikasi terdapat pesan sapaan yang muncul secara otomatis ketika pengguna membuka aplikasi, misalnya seperti “Good Morning”. Pesan ini dibuat agar aplikasi terasa lebih personal dan ramah bagi pengguna. Selain itu, nama pengguna juga ditampilkan pada sapaan tersebut sehingga pengguna merasa aplikasi benar-benar ditujukan untuk mereka.
+Pada halaman utama (Home Page) aplikasi terdapat pesan sapaan yang muncul secara otomatis ketika pengguna membuka aplikasi, misalnya seperti “Good Morning”. Pesan ini dibuat agar aplikasi terasa lebih personal dan ramah bagi pengguna. Selain itu, nama pengguna juga ditampilkan pada sapaan tersebut sehingga pengguna merasa aplikasi benar-benar ditujukan untuk mereka.
 
 ### 1️⃣3️⃣ Motivational Quote
 
-Di bagian atas halaman utama juga terdapat kutipan motivasi singkat yang bertujuan untuk memberikan semangat kepada pengguna dalam menjalankan kebiasaan mereka. Pesan ini diharapkan dapat membantu pengguna tetap termotivasi untuk menyelesaikan habit yang sudah mereka buat setiap harinya.
+Di bagian atas halaman utama (Home Page) juga terdapat kutipan motivasi singkat yang bertujuan untuk memberikan semangat kepada pengguna dalam menjalankan kebiasaan mereka. Pesan ini diharapkan dapat membantu pengguna tetap termotivasi untuk menyelesaikan habit yang sudah mereka buat setiap harinya.
 
 ### 1️⃣4️⃣ Reset Form pada Tambah Habit
 
@@ -119,11 +119,15 @@ Saat pengguna mengisi form untuk menambahkan atau mengedit habit, aplikasi menam
 
 Aplikasi HabitBloom mendukung dua tema tampilan, yaitu Light Mode dan Dark Mode. Pengguna dapat mengganti tema sesuai preferensi agar tampilan aplikasi lebih nyaman digunakan dalam berbagai kondisi pencahayaan.
 
+### 1️⃣7️⃣ Profile dan Logout
+
+Aplikasi HabitBloom juga menyediakan fitur **Profile** yang menampilkan informasi akun pengguna yang sedang login. Pada halaman ini pengguna dapat melihat email yang digunakan untuk masuk ke dalam aplikasi. Selain menampilkan informasi akun, pada halaman ini juga tersedia tombol **Logout** yang dapat digunakan untuk keluar dari aplikasi. Ketika tombol logout ditekan, pengguna akan keluar dari sesi login dan akan diarahkan kembali ke halaman awal aplikasi. Fitur ini membantu menjaga keamanan akun serta memudahkan pengguna jika ingin berganti akun atau menghentikan penggunaan aplikasi sementara.
+
 ---
 
 # 🧩 Widget yang Digunakan
 
-Aplikasi **HabitBloom** dibangun menggunakan berbagai widget Flutter untuk membentuk tampilan antarmuka serta mengatur interaksi pengguna. Berikut adalah beberapa widget utama yang digunakan dalam pengembangan aplikasi ini.
+Aplikasi **HabitBloom** dibangun menggunakan berbagai widget yang disediakan oleh Flutter untuk membentuk tampilan antarmuka serta mengatur interaksi antara pengguna dan aplikasi. Setiap widget memiliki peran masing-masing, mulai dari mengatur struktur halaman, menampilkan data, hingga menangani input dari pengguna. Pada tabel berikut ditampilkan beberapa widget utama yang digunakan dalam pengembangan aplikasi HabitBloom beserta fungsinya.
 
 | No | Widget | Fungsi |
 |----|--------|--------|
@@ -168,7 +172,7 @@ Aplikasi **HabitBloom** dibangun menggunakan berbagai widget Flutter untuk membe
 
 # 🛠️ Tools yang Digunakan
 
-Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses pengembangan lebih terstruktur, efisien, dan mudah dikelola.
+Aplikasi ** HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukung yang membantu proses pengembangan aplikasi menjadi lebih terstruktur dan efisien. Tools ini digunakan mulai dari penulisan kode program, pengelolaan database, hingga penyimpanan repository project. Dengan menggunakan tools tersebut, proses pengembangan aplikasi dapat dilakukan dengan lebih mudah serta mempermudah proses pengujian dan pengelolaan kode.
 
 | Tools | Keterangan |
 |------|------------|
@@ -216,7 +220,7 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
 
 # 🗄 Struktur Database
 
-Aplikasi **HabitBloom** menggunakan **Supabase Database** untuk menyimpan data habit pengguna. Tabel yang digunakan pada aplikasi **HabitBloom** adalah tabel `habits` yang menyimpan data kebiasaan pengguna. Berikut adalah struktur tabel yang digunakan:
+Aplikasi **HabitBloom** menggunakan **Supabas**e sebagai database untuk menyimpan seluruh data kebiasaan yang dibuat oleh pengguna. Data tersebut disimpan dalam sebuah tabel bernama **`habits`**. Setiap habit yang dibuat akan memiliki beberapa informasi seperti nama habit, kategori, target harian, catatan, serta status apakah habit tersebut sudah diselesaikan atau belum. Berikut merupakan struktur tabel yang digunakan untuk menyimpan data habit pada aplikasi HabitBloom.
 
 | Kolom Database | Tipe Data | Keterangan |
 |---------------|-----------|------------|
