@@ -162,8 +162,7 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
 
 # 📂 Struktur Project
 
-  <img width="221" height="553" alt="image" src="https://github.com/user-attachments/assets/7cf42050-5184-437b-bae0-f0fcc6de3524" />
-  
+  <img width="285" height="1006" alt="Image" src="https://github.com/user-attachments/assets/b0ac39a7-93ad-4df8-8e7b-938c44d4db10" />
 
   Project ini menggunakan struktur standar dari Flutter, sehingga beberapa folder dan file sudah otomatis terbentuk sejak awal pembuatan project. Bagian yang paling utama terdapat pada folder lib, karena di dalam folder inilah seluruh kode aplikasi ditulis. File
   main.dart yang berada di dalam folder tersebut menjadi titik awal saat aplikasi dijalankan.
