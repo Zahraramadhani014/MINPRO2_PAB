@@ -123,6 +123,12 @@ Aplikasi HabitBloom mendukung dua tema tampilan, yaitu Light Mode dan Dark Mode.
 
 Aplikasi HabitBloom juga menyediakan fitur **Profile** yang menampilkan informasi akun pengguna yang sedang login. Pada halaman ini pengguna dapat melihat email yang digunakan untuk masuk ke dalam aplikasi. Selain menampilkan informasi akun, pada halaman ini juga tersedia tombol **Logout** yang dapat digunakan untuk keluar dari aplikasi. Ketika tombol logout ditekan, pengguna akan keluar dari sesi login dan akan diarahkan kembali ke halaman awal aplikasi. Fitur ini membantu menjaga keamanan akun serta memudahkan pengguna jika ingin berganti akun atau menghentikan penggunaan aplikasi sementara.
 
+### 1️⃣8️⃣ Navigasi Antar Halaman
+
+Fitur navigasi antar halaman digunakan untuk memindahkan pengguna dari satu halaman ke halaman lain di dalam aplikasi. Navigasi ini memungkinkan pengguna berpindah antara halaman welcome, login, register, home, serta halaman form habit dengan lebih mudah. 
+
+Pada aplikasi ini, navigasi diatur menggunakan `Navigator` dan `MaterialPageRoute` dari Flutter. Dengan navigasi tersebut, pengguna dapat membuka halaman tertentu seperti menambah habit baru, mengedit habit, atau kembali ke halaman sebelumnya setelah menyelesaikan suatu proses.
+
 ---
 
 # 🧩 Widget yang Digunakan
@@ -238,7 +244,7 @@ Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpa
 
 ### Welcome Page
 
-Halaman pertama yang muncul ketika aplikasi dibuka.
+Halaman **Welcome Page** merupakan halaman pertama yang ditampilkan ketika aplikasi HabitBloom dibuka. Pada halaman ini pengguna akan melihat tampilan pembuka aplikasi beserta tombol untuk melanjutkan ke proses login atau registrasi akun. Tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode**, sehingga tampilan aplikasi dapat menyesuaikan dengan tema yang dipilih pengguna. Perbedaan tampilan kedua mode tersebut dapat dilihat pada gambar berikut.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
@@ -246,7 +252,9 @@ Halaman pertama yang muncul ketika aplikasi dibuka.
 
 ### Login Page
 
-Pengguna dapat login menggunakan email dan password.
+Halaman **Login Page** digunakan untuk proses autentikasi pengguna sebelum masuk ke dalam aplikasi. Pada halaman ini pengguna diminta untuk memasukkan **email** dan **password** yang telah terdaftar. Jika data yang dimasukkan benar, pengguna akan diarahkan ke halaman utama aplikasi.
+
+Halaman login juga dilengkapi dengan validasi input untuk memastikan format email dan password sudah sesuai sebelum proses login dilakukan. Selain itu, tampilan halaman ini mendukung **Light Mode** dan **Dark Mode** sehingga pengguna tetap nyaman menggunakan aplikasi dalam berbagai kondisi tampilan.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
@@ -254,7 +262,9 @@ Pengguna dapat login menggunakan email dan password.
 
 ### Register Page
 
-Pengguna dapat membuat akun baru.
+Halaman **Register Page** digunakan untuk membuat akun baru sebelum pengguna dapat menggunakan aplikasi HabitBloom. Pada halaman ini pengguna diminta untuk mengisi beberapa data seperti **email**, **password**, dan **konfirmasi password**. Data tersebut kemudian akan disimpan melalui sistem autentikasi yang disediakan oleh Supabase.
+
+Halaman ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah benar, seperti memastikan format email valid dan password sesuai dengan ketentuan. Selain itu, tampilan halaman register juga mendukung **Light Mode** dan **Dark Mode** sehingga pengguna tetap dapat menggunakan aplikasi dengan nyaman sesuai tema yang dipilih.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
@@ -262,7 +272,13 @@ Pengguna dapat membuat akun baru.
 
 ### Home Page
 
-Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
+Halaman **Home Page** merupakan halaman utama yang ditampilkan setelah pengguna berhasil login ke dalam aplikasi. Pada halaman ini pengguna dapat melihat daftar habit yang telah dibuat, status habit yang sudah diselesaikan, serta progress penyelesaian habit pada hari tersebut.
+
+Selain menampilkan daftar habit, halaman ini juga menyediakan beberapa fitur tambahan seperti **search habit** untuk mencari kebiasaan tertentu, **filter kategori**, serta **progress tracking** yang menunjukkan persentase habit yang telah diselesaikan. Pengguna juga dapat melakukan aksi seperti menandai habit sebagai selesai, mengedit habit, menghapus habit, atau menambahkan habit baru melalui tombol tambah yang tersedia pada halaman ini.
+
+Perlu diperhatikan bahwa daftar habit pada halaman ini **tidak otomatis ter-reset setiap hari**. Habit yang telah dibuat akan tetap tersimpan dan ditampilkan pada hari berikutnya. Oleh karena itu, pengguna dapat mengelola kembali habit tersebut secara manual sesuai kebutuhan. Jika habit tersebut masih ingin digunakan, pengguna dapat **menghapus tanda selesai (uncheck)** agar habit dapat dikerjakan kembali. Jika ada habit yang sudah tidak digunakan, pengguna dapat **menghapus habit** tersebut. Selain itu, pengguna juga dapat **mengedit data habit** apabila terdapat perubahan pada nama habit, kategori, target harian, atau catatan.
+
+Seperti halaman lainnya, tampilan Home Page juga mendukung **Light Mode** dan **Dark Mode** agar pengguna tetap nyaman menggunakan aplikasi dalam berbagai kondisi tampilan.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
@@ -270,9 +286,15 @@ Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
 
 ### Habit Form Page
 
-Digunakan untuk menambahkan atau mengedit habit.
+Halaman **Habit Form Page** digunakan ketika pengguna ingin menambahkan habit baru atau mengedit habit yang sudah ada.
 
 a. Form Tambah Habit
+
+Halaman **Form Tambah Habit** digunakan ketika pengguna ingin menambah data habit baru. Pada halaman ini pengguna diminta untuk mengisi beberapa informasi seperti **nama habit**, **kategori**, **target harian**, serta **catatan tambahan** jika diperlukan.
+    
+Form ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah sesuai, misalnya nama habit tidak boleh kosong, kategori harus dipilih terlebih dahulu, target harian tidak boleh kosong, serta catatan berupa opsional jadi pengguna bisa mengosongkan nya. Selain itu terdapat tombol **Tambah Habit** untuk menyimpan data habit ke database, serta tombol **Reset Form** untuk mengosongkan kembali seluruh input pada form.
+    
+Seperti halaman lainnya, tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode** sehingga tampilan aplikasi tetap nyaman digunakan sesuai tema yang dipilih oleh pengguna.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
@@ -280,23 +302,15 @@ a. Form Tambah Habit
 
 b. Form Edit Habit
 
+Halaman **Form Edit Habit** digunakan ketika pengguna ingin memperbarui data habit yang sudah dibuat sebelumnya. Pada halaman ini, informasi habit yang dipilih akan otomatis ditampilkan di dalam form sehingga pengguna dapat dengan mudah mengubah data seperti **nama habit**, **kategori**, **target harian**, maupun **catatan tambahan**.
+
+Setelah melakukan perubahan, pengguna dapat menekan tombol **Update Habit** untuk menyimpan perubahan tersebut ke dalam database. Jika pengguna tidak ingin melanjutkan proses pengeditan, tersedia juga tombol **Batal** untuk kembali ke halaman sebelumnya tanpa menyimpan perubahan.
+
+Tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode**, sehingga tampilan aplikasi tetap nyaman digunakan sesuai tema yang dipilih oleh pengguna.
+
 | Light Mode | Dark Mode |
 |:----------|:-----|
 | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" /> | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/fa23fc1e-e0f0-475a-b340-da85d11a5631" /> |
-
----
-
-# 🔐 Nilai Tambah
-
-Beberapa fitur tambahan yang diterapkan dalam aplikasi ini:
-
-- Supabase Authentication (Login & Register)
-- Dark Mode & Light Mode
-- Progress Bar Habit
-- Search Habit
-- Filter Kategori
-- Snackbar Notification
-- Environment Variables (.env) untuk keamanan API Key
 
 ---
 
