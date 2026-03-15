@@ -336,39 +336,67 @@ b. Jika klik link register maka akan diarhkan ke halaman register
 
 Pada halaman ini pengguna juga bisa mengatur tampilan menjadi dark mode atau light mode pada ikon yang ada di pojok kanan atas
 
-
+><img width="784" height="420" alt="Image" src="https://github.com/user-attachments/assets/d3ad5335-6c72-4b87-b3f6-3d7b25369051" />
 
 ---
 
 ### 2️⃣ Login Page
 
-Pada halaman ini pengguna harus memasukkan:
+Pada halaman ini pengguna harus memasukkan Email dan Password. Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi. Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
 
-- Email
-- Password
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
 
-Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi.
+Sebagai contoh disini saya
 
-Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/de93dae8-d9a7-4fc5-8ef4-0c25b8049339" />
 
-<img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
+muncul popup berhasil
 
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/5f31265e-55bf-4b9c-8d41-21e322855542" />
+
+##### Validasi Input Login Page
+
+1. Login langsung klik tombol nya
+
+   ><img width="1918" height="1029" alt="Image" src="https://github.com/user-attachments/assets/45b02eab-8f55-4f8f-b9d3-83c3568e1a46" />
+
+2. Login jika format email dan password ga sesuai
+
+   ><img width="1919" height="1035" alt="Image" src="https://github.com/user-attachments/assets/2a2e21f6-c112-48ba-a02c-41ea022e4e86" />
+
+3. Login dengan email dan password yang ga ada tidak terdata di sistem
+
+   ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/58ab6ed0-940c-40cc-b117-61665670d173" />
 
 ---
 
 ### 3️⃣ Register Page
 
-Pada halaman ini pengguna dapat membuat akun baru dengan mengisi:
+Pada halaman ini pengguna dapat membuat akun baru dengan mengisi Email, Password, dan Konfirmasi Password. Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**. Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
 
-- Email
-- Password
-- Konfirmasi Password
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
-Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**.
+Sebagai contoh disini saya
 
-Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/6d462825-430f-40a4-a4b3-a4e5cfbd6ea7" />
 
-<img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
+muncul pop up berhasil
+
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/46d9009e-6b11-42fa-a5e0-ce226832ef42" />
+
+##### Validasi Input Register Page
+
+1. register langsung klik tombol register
+
+   ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7143e55a-4850-47c1-adf5-c561baec08ae" />
+
+2. register jika format email, password dan konfirmasi password tidak sesuai
+
+   ><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/727091e4-dc82-49bd-865f-216105bf08b0" />
+
+3. register dengan akun yang udah terdaftar disistem
+
+   ><img width="1918" height="1033" alt="Image" src="https://github.com/user-attachments/assets/45a1cd2d-4f14-4ba3-95f9-ef19027f70a6" />
 
 ---
 
@@ -376,33 +404,106 @@ Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
 
 Setelah login berhasil, pengguna akan diarahkan ke **halaman utama (Home Page)**.
 
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" />
+
 Pada halaman ini pengguna dapat melihat:
 
-- Daftar habit yang telah dibuat
-- Progress habit yang telah selesai
-- Fitur pencarian habit
-- Filter kategori habit
+a. filter kategori
 
-Selain itu terdapat **progress bar** yang menunjukkan jumlah habit yang telah selesai dibandingkan total habit yang ada.
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f34220b1-55a0-4816-98bd-f0d234b17a8b" />
 
-<img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" />
+b. Ganti mode dark/light
 
+><img width="858" height="462" alt="Image" src="https://github.com/user-attachments/assets/3effe7ee-ee7c-40ac-9a08-62c679c24041" />
+
+c. profile dan logout. 
+
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/3a3cf49d-6982-455b-b554-3719c051d511" />
+
+d. gretting sesuai situasi pagi, siang, sore. serta nama yang gunain akun
+
+><img width="1917" height="119" alt="Image" src="https://github.com/user-attachments/assets/fc8c22f5-a8c0-4e05-bcbb-99fe43a5cfaa" />
+
+e. quotes random setiap login
+
+><img width="1892" height="72" alt="Image" src="https://github.com/user-attachments/assets/ae9a0376-8c08-4c1c-860e-49fdc4380dc8" />
+
+f. statistik completed 
+
+><img width="1919" height="157" alt="Image" src="https://github.com/user-attachments/assets/bab300d1-405b-439e-b61c-22dd533f657c" />
+
+g. progres bar
+
+><img width="1916" height="109" alt="Image" src="https://github.com/user-attachments/assets/b1d3c0f4-b107-44bb-9ed0-2e8331e4eead" />
+
+h. search bar
+
+><img width="1917" height="69" alt="Image" src="https://github.com/user-attachments/assets/5ed41837-9ae4-489d-bcb5-b6e8277f4cdd" />
+
+i. daftar habit yang belum diselesakan dan sudah diselesaikan
+
+><img width="1919" height="627" alt="Image" src="https://github.com/user-attachments/assets/88bc8234-2882-4967-8ad3-413828ac8a42" />
+
+j. checkbox, edit, dan hapus habit
+
+><img width="1915" height="150" alt="Image" src="https://github.com/user-attachments/assets/158b6607-15f2-4002-b08a-40dc5e730913" />
+
+k. tambah habit klik ikon (+)
+
+><img width="1919" height="734" alt="Image" src="https://github.com/user-attachments/assets/08888006-7275-432d-a342-36c824b8aab6" />
 ---
 
 ### 5️⃣ Tambah Habit
 
-Pengguna dapat menambahkan habit baru dengan menekan tombol **Floating Action Button (+)**.
+Pengguna dapat menambahkan habit baru dengan menekan tombol **Floating Action Button (+)**. Pada halaman form, pengguna diminta mengisi Nama Habit, Kategori, Target Harian, dan Catatan (opsional). Setelah data disimpan, habit akan langsung muncul pada halaman utama. Pada halaman ini juga ada tombol reset form 
 
-Pada halaman form, pengguna diminta mengisi:
+><img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" />
 
-- Nama Habit
-- Kategori
-- Target Harian
-- Catatan (opsional)
+sebagai contoh saya
 
-Setelah data disimpan, habit akan langsung muncul pada halaman utama.
+><img width="1916" height="1036" alt="Image" src="https://github.com/user-attachments/assets/54a3320d-df5a-4c33-817d-1602ead2e4f5" />
 
-<img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" />
+muncul pop up
+
+><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/0defa5a0-1ee0-4199-a3cd-b904a8abb168" />
+
+data muncul di list habit
+
+><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/46c08cd7-71e0-4f8c-b96b-c8a90e7b941a" />
+
+##### Validasi Input Tambah Habit
+
+1. klik tombol tambah data langsung
+
+   ><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/ca8f5bef-48a7-4c88-a858-5d7c78841851" />
+
+2. nama habit dan target harian kurang dari 2 kata, dan catatan lebih dari 200 karakter
+
+   ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/816fb19f-38da-4d84-b72b-6ec43246bf84" />
+
+3. reset form muncul notif 2 pilihan 
+
+  ><img width="1918" height="1026" alt="Image" src="https://github.com/user-attachments/assets/828c36c7-a9e0-4852-8ac1-68b62ba429d7" />
+
+  -  klik no, form tetap
+    
+    ><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/25263b18-be00-4e5a-bc47-fe1bab33cbe1" />
+
+  - klik yes, form tereset dan muncul notif
+
+    ><img width="1915" height="1034" alt="Image" src="https://github.com/user-attachments/assets/b12b0055-cd17-4fe8-9df5-e0d2506f44e9" />
+
+4. Jika klik back pada appbar disaat data belum ke tambah
+
+   ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/d657fee5-29d3-468b-b1cf-d8c4f2645bc6" />
+
+   - lanjut edit, tetap di form
+
+     ><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/912024ba-f5d5-40ee-b990-e3d88900bb29" />
+
+   - tetap keluar, kembali ke home page
+   
+     ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/703a1ca7-1844-4221-9f1d-8e226ead0ca9" />
 
 ---
 
