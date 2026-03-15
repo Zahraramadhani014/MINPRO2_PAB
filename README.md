@@ -320,15 +320,25 @@ Berikut adalah alur penggunaan aplikasi **HabitBloom**:
 
 ### 1️⃣ Welcome Page
 
-Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi serta tombol untuk melanjutkan ke halaman login.
+Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi serta tombol untuk melanjutkan ke halaman login. Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
 
-Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
+<img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" />
+
+Pada halaman ini terdapat dua aksi yang bisa dilakukan yaitu login dan juga register
+
+Jika klik tombol login maka akan diarhkan ke halaman login
+
+<img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
+
+Jika klik link register maka akan diarhkan ke halaman register
+
+<img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
+
+Pada halaman ini pengguna juga bisa mengatur tampilan menjadi dark mode atau light mode pada ikon yang ada di pojok kanan atas
 
 ---
 
 ### 2️⃣ Login Page
-
-Setelah menekan tombol login, pengguna akan diarahkan ke **halaman Login**.
 
 Pada halaman ini pengguna harus memasukkan:
 
@@ -338,6 +348,9 @@ Pada halaman ini pengguna harus memasukkan:
 Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi.
 
 Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
+
+<img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
+
 
 ---
 
@@ -352,6 +365,8 @@ Pada halaman ini pengguna dapat membuat akun baru dengan mengisi:
 Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**.
 
 Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
+
+<img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
 ---
 
@@ -368,6 +383,8 @@ Pada halaman ini pengguna dapat melihat:
 
 Selain itu terdapat **progress bar** yang menunjukkan jumlah habit yang telah selesai dibandingkan total habit yang ada.
 
+<img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" />
+
 ---
 
 ### 5️⃣ Tambah Habit
@@ -382,6 +399,8 @@ Pada halaman form, pengguna diminta mengisi:
 - Catatan (opsional)
 
 Setelah data disimpan, habit akan langsung muncul pada halaman utama.
+
+<img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" />
 
 ---
 
@@ -402,6 +421,9 @@ Ketika tombol tersebut ditekan:
 Pengguna dapat mengedit habit dengan menekan ikon **edit**.
 
 Data habit akan muncul kembali pada halaman form sehingga pengguna dapat memperbarui informasi yang diperlukan.
+
+<img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" />
+
 
 ---
 
