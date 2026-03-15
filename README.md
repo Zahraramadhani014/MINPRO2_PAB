@@ -250,7 +250,7 @@ Pengguna dapat login menggunakan email dan password.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> | <img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/541c9393-8371-43b8-8125-f9c4d3bcb0d2" /> |
+| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> | <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/de1b69a9-26fe-4eb5-98d8-9156769ff75b" /> |
 
 ### Register Page
 
