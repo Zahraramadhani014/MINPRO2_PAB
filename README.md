@@ -320,21 +320,23 @@ Berikut adalah alur penggunaan aplikasi **HabitBloom**:
 
 ### 1️⃣ Welcome Page
 
-Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi serta tombol untuk melanjutkan ke halaman login. Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
+Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi, tagline, tombol untuk melanjutkan ke halaman login, dan link register untuk melanjutkan ke halaman register. Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
 
-<img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" />
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" />
 
 Pada halaman ini terdapat dua aksi yang bisa dilakukan yaitu login dan juga register
 
-Jika klik tombol login maka akan diarhkan ke halaman login
+a. Jika klik tombol login maka akan diarahkan ke halaman login
 
-<img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
 
-Jika klik link register maka akan diarhkan ke halaman register
+b. Jika klik link register maka akan diarhkan ke halaman register
 
-<img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
 Pada halaman ini pengguna juga bisa mengatur tampilan menjadi dark mode atau light mode pada ikon yang ada di pojok kanan atas
+
+
 
 ---
 
