@@ -258,7 +258,7 @@ Pengguna dapat membuat akun baru.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" /> | Zahraturramadhani |
 
 ### Home Page
 
