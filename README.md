@@ -242,7 +242,7 @@ Halaman pertama yang muncul ketika aplikasi dibuka.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" /> | Zahraturramadhani |
 
 ### Login Page
 
