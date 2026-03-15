@@ -294,12 +294,12 @@ class _LoginPageState extends State<LoginPage> {
                           return "Email wajib diisi";
                         }
 
-                        final emailRegex = RegExp(
-                          r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+                        final gmailRegex = RegExp(
+                          r'^[a-zA-Z0-9._%+-]+@gmail\.com$',
                         );
 
-                        if (!emailRegex.hasMatch(value)) {
-                          return "Format email tidak valid";
+                        if (!gmailRegex.hasMatch(value)) {
+                          return "Email harus menggunakan format @gmail.com";
                         }
 
                         return null;
