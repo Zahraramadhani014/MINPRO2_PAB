@@ -276,7 +276,7 @@ a. Form Tambah Habit
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" /> | Zahraturramadhani |
+| <img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" /> | <img width="1918" height="1028" alt="Image" src="https://github.com/user-attachments/assets/6fa93eac-7526-4a63-81ce-853bc9600859" /> |
 
 b. Form Edit Habit
 
