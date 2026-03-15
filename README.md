@@ -96,7 +96,6 @@ Habit dapat difilter berdasarkan kategori seperti:
 ### 🔟 Dark Mode & Light Mode
 Aplikasi mendukung tema terang dan gelap yang dapat diubah melalui tombol di aplikasi.
 
-
 ---
 
 # 🧩 Widget yang Digunakan
@@ -164,6 +163,7 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
 # 📂 Struktur Project
 
   <img width="221" height="553" alt="image" src="https://github.com/user-attachments/assets/7cf42050-5184-437b-bae0-f0fcc6de3524" />
+  
 
   Project ini menggunakan struktur standar dari Flutter, sehingga beberapa folder dan file sudah otomatis terbentuk sejak awal pembuatan project. Bagian yang paling utama terdapat pada folder lib, karena di dalam folder inilah seluruh kode aplikasi ditulis. File
   main.dart yang berada di dalam folder tersebut menjadi titik awal saat aplikasi dijalankan.
@@ -176,7 +176,6 @@ Aplikasi ini dikembangkan menggunakan beberapa tools pendukung agar proses penge
     
   Selain itu, terdapat file .gitignore yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub, seperti file hasil build. Terakhir, file README.md digunakan sebagai dokumentasi project yang berisi penjelasan mengenai
   aplikasi, fitur, serta struktur yang digunakan.
-
 
 # 🗄 Struktur Database
 
@@ -194,7 +193,7 @@ Aplikasi **HabitBloom** menggunakan **Supabase Database** untuk menyimpan data h
 
 ---
 
-# 📸 Tampilan Aplikasi
+# 📱 Tampilan Aplikasi
 
 ### Welcome Page
 Halaman pertama yang muncul ketika aplikasi dibuka.
@@ -226,7 +225,6 @@ Beberapa fitur tambahan yang diterapkan dalam aplikasi ini:
 - Environment Variables (.env) untuk keamanan API Key
 
 ---
-
 
 # 🔄 Alur Aplikasi
 
