@@ -320,51 +320,67 @@ Berikut adalah alur penggunaan aplikasi **HabitBloom**:
 
 ### 1️⃣ Welcome Page
 
-Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi, tagline, tombol untuk melanjutkan ke halaman login, dan link register untuk melanjutkan ke halaman register. Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
+Pada saat aplikasi HabitBloom pertama kali dibuka, pengguna akan melihat halaman Welcome Page. Halaman ini berfungsi sebagai tampilan pembuka yang menampilkan nama aplikasi, tagline, serta beberapa tombol yang dapat digunakan untuk masuk ke dalam aplikasi.
+
+Di halaman ini pengguna diberikan dua pilihan, yaitu login jika sudah memiliki akun, atau register jika belum memiliki akun. Tampilan halaman ini juga dibuat menarik dengan ilustrasi dan warna yang lembut agar memberikan kesan nyaman saat pertama kali pengguna membuka aplikasi.
 
 ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" />
 
-Pada halaman ini terdapat dua aksi yang bisa dilakukan yaitu login dan juga register
+Pada halaman Welcome Page terdapat dua aksi utama yang dapat dilakukan oleh pengguna:
 
-a. Jika klik tombol login maka akan diarahkan ke halaman login
+a. Login
+
+Jika pengguna menekan tombol Login, maka pengguna akan diarahkan ke halaman login. Pada halaman ini pengguna diminta untuk memasukkan email dan password yang sudah didaftarkan sebelumnya. Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi dan diarahkan ke halaman utama (Home Page).
 
 ><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
 
-b. Jika klik link register maka akan diarhkan ke halaman register
+b. Register
+
+Jika pengguna belum memiliki akun, pengguna dapat menekan link Register yang tersedia pada halaman Welcome Page. Setelah itu pengguna akan diarahkan ke halaman pendaftaran akun. Pada halaman ini pengguna diminta untuk mengisi beberapa data seperti email, password, dan konfirmasi password untuk membuat akun baru. Setelah proses pendaftaran berhasil, pengguna dapat menggunakan akun tersebut untuk melakukan login ke dalam aplikasi.
 
 ><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
-Pada halaman ini pengguna juga bisa mengatur tampilan menjadi dark mode atau light mode pada ikon yang ada di pojok kanan atas
+Pada halaman ini pengguna juga dapat mengatur tampilan aplikasi sesuai dengan preferensi mereka. Pengguna dapat mengganti tampilan menjadi Dark Mode atau Light Mode dengan menekan ikon yang berada di pojok kanan atas layar. Jika ikon tersebut ditekan, maka tampilan aplikasi akan berubah. Light Mode menampilkan tampilan dengan latar belakang yang terang, sedangkan Dark Mode menggunakan latar belakang yang lebih gelap. Fitur ini disediakan agar pengguna dapat menggunakan aplikasi dengan lebih nyaman, terutama saat digunakan dalam kondisi pencahayaan yang berbeda, misalnya pada malam hari atau di tempat yang minim cahaya. Dengan adanya fitur ini, pengguna dapat menyesuaikan tampilan aplikasi sesuai dengan kenyamanan masing-masing.
 
-><img width="784" height="420" alt="Image" src="https://github.com/user-attachments/assets/d3ad5335-6c72-4b87-b3f6-3d7b25369051" />
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/d3ad5335-6c72-4b87-b3f6-3d7b25369051" />
 
 ---
 
 ### 2️⃣ Login Page
 
-Pada halaman ini pengguna harus memasukkan Email dan Password. Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi. Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
+Pada halaman Login Page, pengguna diminta untuk memasukkan email dan password yang telah didaftarkan sebelumnya. Kedua data tersebut digunakan sebagai proses autentikasi agar pengguna dapat masuk ke dalam aplikasi.
 
 ><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
 
-Sebagai contoh disini saya
+Sebagai contoh disini saya mengisi field email dengan **lisa@gmail.com** dan mengisi field password dengan 8 karakter yang telah didaftarkan sebelumnya di halaman registrasi,
 
 ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/de93dae8-d9a7-4fc5-8ef4-0c25b8049339" />
 
-muncul popup berhasil
+Jika email dan password yang dimasukkan sesuai dengan data yang tersimpan di sistem, maka pengguna akan berhasil login dan akan muncul popup notifikasi yang menampilkan pesan bahwa proses login berhasil dilakukan. Setelah proses login berhasil, pengguna akan diarahkan ke halaman utama aplikasi.
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/5f31265e-55bf-4b9c-8d41-21e322855542" />
 
+Apabila pengguna belum memiliki akun, pengguna dapat memilih menu Register untuk membuat akun baru terlebih dahulu sebelum melakukan login.
+
 ##### Validasi Input Login Page
 
-1. Login langsung klik tombol nya
+Pada halaman login juga diterapkan beberapa validasi untuk memastikan data yang dimasukkan oleh pengguna sudah sesuai.
+
+1. Login tanpa mengisi email dan password
+  
+   Jika pengguna langsung menekan tombol Login tanpa mengisi email dan password, maka sistem akan menampilkan pesan peringatan bahwa email dan password wajib diisi.
 
    ><img width="1918" height="1029" alt="Image" src="https://github.com/user-attachments/assets/45b02eab-8f55-4f8f-b9d3-83c3568e1a46" />
 
-2. Login jika format email dan password ga sesuai
+2. Login dengan format email atau password yang tidak sesuai
+  
+   Jika pengguna memasukkan email dengan format yang tidak sesuai atau password yang tidak memenuhi ketentuan, maka sistem akan menampilkan pesan kesalahan pada form input. Hal ini bertujuan untuk memastikan bahwa data yang dimasukkan oleh pengguna sudah sesuai dengan format yang ditentukan oleh sistem.
 
    ><img width="1919" height="1035" alt="Image" src="https://github.com/user-attachments/assets/2a2e21f6-c112-48ba-a02c-41ea022e4e86" />
 
-3. Login dengan email dan password yang ga ada tidak terdata di sistem
+3. Login dengan akun yang tidak terdaftar
+  
+   Jika pengguna memasukkan email dan password yang tidak terdaftar di dalam sistem, maka proses login tidak akan berhasil. Sistem akan menampilkan notifikasi kesalahan yang memberitahukan bahwa email atau password yang dimasukkan tidak valid sehingga pengguna perlu memeriksa kembali data yang dimasukkan.
 
    ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/58ab6ed0-940c-40cc-b117-61665670d173" />
 
@@ -372,29 +388,39 @@ muncul popup berhasil
 
 ### 3️⃣ Register Page
 
-Pada halaman ini pengguna dapat membuat akun baru dengan mengisi Email, Password, dan Konfirmasi Password. Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**. Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
+Pada halaman Register Page, pengguna dapat membuat akun baru agar bisa menggunakan aplikasi HabitBloom. Untuk membuat akun, pengguna perlu mengisi beberapa data yaitu email, password, dan konfirmasi password. Data akun yang dimasukkan akan disimpan menggunakan layanan Supabase Authentication, sehingga akun dapat digunakan untuk login ke dalam aplikasi.
+
+Pada gambar ini ditampilkan halaman Register yang berisi form pendaftaran akun. Pengguna diminta untuk mengisi email, password, dan konfirmasi password. Setelah semua data diisi dengan benar, pengguna dapat menekan tombol Register untuk membuat akun baru.
 
 ><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
-Sebagai contoh disini saya
+Pada gambar ini ditunjukkan contoh ketika pengguna sudah mengisi data pada form register. Email, password, dan konfirmasi password telah diisi sesuai dengan format yang diperlukan. Jika semua data sudah benar, pengguna dapat menekan tombol Register untuk melanjutkan proses pendaftaran akun.
 
 ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/6d462825-430f-40a4-a4b3-a4e5cfbd6ea7" />
 
-muncul pop up berhasil
+Setelah proses pendaftaran berhasil, sistem akan menampilkan popup notifikasi yang menunjukkan bahwa registrasi telah berhasil dilakukan. Pada popup tersebut terdapat pesan bahwa akun telah berhasil dibuat dan pengguna dapat melanjutkan dengan melakukan login menggunakan akun yang telah didaftarkan.
 
 ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/46d9009e-6b11-42fa-a5e0-ce226832ef42" />
 
 ##### Validasi Input Register Page
 
-1. register langsung klik tombol register
+Pada halaman register juga diterapkan beberapa validasi untuk memastikan data yang dimasukkan oleh pengguna sudah sesuai dengan ketentuan yang berlaku.
+
+1. Register tanpa mengisi data
+  
+   Pada gambar ini ditunjukkan kondisi ketika pengguna langsung menekan tombol Register tanpa mengisi email, password, maupun konfirmasi password. Sistem akan menampilkan pesan peringatan pada setiap field yang kosong untuk memberi tahu bahwa data tersebut wajib diisi sebelum proses pendaftaran dapat dilakukan.
 
    ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7143e55a-4850-47c1-adf5-c561baec08ae" />
 
-2. register jika format email, password dan konfirmasi password tidak sesuai
+2. Format email atau password tidak sesuai
+  
+   Pada gambar ini pengguna memasukkan email dengan format yang tidak sesuai serta password yang tidak memenuhi ketentuan. Selain itu, konfirmasi password juga tidak sama dengan password yang dimasukkan. Sistem akan menampilkan pesan kesalahan untuk memberitahu pengguna bahwa data yang dimasukkan belum sesuai sehingga perlu diperbaiki terlebih dahulu.
 
    ><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/727091e4-dc82-49bd-865f-216105bf08b0" />
 
-3. register dengan akun yang udah terdaftar disistem
+3. Email sudah terdaftar di sistem
+  
+   Pada gambar ini pengguna mencoba melakukan pendaftaran menggunakan email yang sudah pernah digunakan sebelumnya. Sistem akan menolak proses registrasi dan menampilkan notifikasi bahwa email tersebut sudah digunakan. Pengguna diminta untuk menggunakan email lain agar dapat membuat akun baru.
 
    ><img width="1918" height="1033" alt="Image" src="https://github.com/user-attachments/assets/45a1cd2d-4f14-4ba3-95f9-ef19027f70a6" />
 
