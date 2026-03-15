@@ -172,7 +172,7 @@ Aplikasi **HabitBloom** dibangun menggunakan berbagai widget yang disediakan ole
 
 # 🛠️ Tools yang Digunakan
 
-Aplikasi ** HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukung yang membantu proses pengembangan aplikasi menjadi lebih terstruktur dan efisien. Tools ini digunakan mulai dari penulisan kode program, pengelolaan database, hingga penyimpanan repository project. Dengan menggunakan tools tersebut, proses pengembangan aplikasi dapat dilakukan dengan lebih mudah serta mempermudah proses pengujian dan pengelolaan kode.
+Aplikasi **HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukung yang membantu proses pengembangan aplikasi menjadi lebih terstruktur dan efisien. Tools ini digunakan mulai dari penulisan kode program, pengelolaan database, hingga penyimpanan repository project. Dengan menggunakan tools tersebut, proses pengembangan aplikasi dapat dilakukan dengan lebih mudah serta mempermudah proses pengujian dan pengelolaan kode.
 
 | Tools | Keterangan |
 |------|------------|
@@ -220,7 +220,7 @@ Aplikasi ** HabitBloom** dikembangkan dengan memanfaatkan beberapa tools penduku
 
 # 🗄 Struktur Database
 
-Aplikasi **HabitBloom** menggunakan **Supabas**e sebagai database untuk menyimpan seluruh data kebiasaan yang dibuat oleh pengguna. Data tersebut disimpan dalam sebuah tabel bernama **`habits`**. Setiap habit yang dibuat akan memiliki beberapa informasi seperti nama habit, kategori, target harian, catatan, serta status apakah habit tersebut sudah diselesaikan atau belum. Berikut merupakan struktur tabel yang digunakan untuk menyimpan data habit pada aplikasi HabitBloom.
+Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpan seluruh data kebiasaan yang dibuat oleh pengguna. Data tersebut disimpan dalam sebuah tabel bernama **`habits`**. Setiap habit yang dibuat akan memiliki beberapa informasi seperti nama habit, kategori, target harian, catatan, serta status apakah habit tersebut sudah diselesaikan atau belum. Berikut merupakan struktur tabel yang digunakan untuk menyimpan data habit pada aplikasi HabitBloom.
 
 | Kolom Database | Tipe Data | Keterangan |
 |---------------|-----------|------------|
