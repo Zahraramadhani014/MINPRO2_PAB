@@ -123,6 +123,12 @@ Aplikasi HabitBloom mendukung dua tema tampilan, yaitu Light Mode dan Dark Mode.
 
 Aplikasi HabitBloom juga menyediakan fitur **Profile** yang menampilkan informasi akun pengguna yang sedang login. Pada halaman ini pengguna dapat melihat email yang digunakan untuk masuk ke dalam aplikasi. Selain menampilkan informasi akun, pada halaman ini juga tersedia tombol **Logout** yang dapat digunakan untuk keluar dari aplikasi. Ketika tombol logout ditekan, pengguna akan keluar dari sesi login dan akan diarahkan kembali ke halaman awal aplikasi. Fitur ini membantu menjaga keamanan akun serta memudahkan pengguna jika ingin berganti akun atau menghentikan penggunaan aplikasi sementara.
 
+### 1️⃣8️⃣ Navigasi Antar Halaman
+
+Fitur navigasi antar halaman digunakan untuk memindahkan pengguna dari satu halaman ke halaman lain di dalam aplikasi. Navigasi ini memungkinkan pengguna berpindah antara halaman welcome, login, register, home, serta halaman form habit dengan lebih mudah. 
+
+Pada aplikasi ini, navigasi diatur menggunakan `Navigator` dan `MaterialPageRoute` dari Flutter. Dengan navigasi tersebut, pengguna dapat membuka halaman tertentu seperti menambah habit baru, mengedit habit, atau kembali ke halaman sebelumnya setelah menyelesaikan suatu proses.
+
 ---
 
 # 🧩 Widget yang Digunakan
@@ -238,61 +244,73 @@ Aplikasi **HabitBloom** menggunakan **Supabase** sebagai database untuk menyimpa
 
 ### Welcome Page
 
-Halaman pertama yang muncul ketika aplikasi dibuka.
+Halaman **Welcome Page** merupakan halaman pertama yang ditampilkan ketika aplikasi HabitBloom dibuka. Pada halaman ini pengguna akan melihat tampilan pembuka aplikasi beserta tombol untuk melanjutkan ke proses login atau registrasi akun. Tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode**, sehingga tampilan aplikasi dapat menyesuaikan dengan tema yang dipilih pengguna. Perbedaan tampilan kedua mode tersebut dapat dilihat pada gambar berikut.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" /> | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/b6b917dc-90d0-4151-ae62-34bcf67d8f55" /> |
 
 ### Login Page
 
-Pengguna dapat login menggunakan email dan password.
+Halaman **Login Page** digunakan untuk proses autentikasi pengguna sebelum masuk ke dalam aplikasi. Pada halaman ini pengguna diminta untuk memasukkan **email** dan **password** yang telah terdaftar. Jika data yang dimasukkan benar, pengguna akan diarahkan ke halaman utama aplikasi.
+
+Halaman login juga dilengkapi dengan validasi input untuk memastikan format email dan password sudah sesuai sebelum proses login dilakukan. Selain itu, tampilan halaman ini mendukung **Light Mode** dan **Dark Mode** sehingga pengguna tetap nyaman menggunakan aplikasi dalam berbagai kondisi tampilan.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> | <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/de1b69a9-26fe-4eb5-98d8-9156769ff75b" /> |
 
 ### Register Page
 
-Pengguna dapat membuat akun baru.
+Halaman **Register Page** digunakan untuk membuat akun baru sebelum pengguna dapat menggunakan aplikasi HabitBloom. Pada halaman ini pengguna diminta untuk mengisi beberapa data seperti **email**, **password**, dan **konfirmasi password**. Data tersebut kemudian akan disimpan melalui sistem autentikasi yang disediakan oleh Supabase.
+
+Halaman ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah benar, seperti memastikan format email valid dan password sesuai dengan ketentuan. Selain itu, tampilan halaman register juga mendukung **Light Mode** dan **Dark Mode** sehingga pengguna tetap dapat menggunakan aplikasi dengan nyaman sesuai tema yang dipilih.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" /> | <img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/071a4296-514d-41db-b8f2-5f349c344628" /> |
 
 ### Home Page
 
-Menampilkan daftar habit, progress, serta fitur pencarian dan filter.
+Halaman **Home Page** merupakan halaman utama yang ditampilkan setelah pengguna berhasil login ke dalam aplikasi. Pada halaman ini pengguna dapat melihat daftar habit yang telah dibuat, status habit yang sudah diselesaikan, serta progress penyelesaian habit pada hari tersebut.
+
+Selain menampilkan daftar habit, halaman ini juga menyediakan beberapa fitur tambahan seperti **search habit** untuk mencari kebiasaan tertentu, **filter kategori**, serta **progress tracking** yang menunjukkan persentase habit yang telah diselesaikan. Pengguna juga dapat melakukan aksi seperti menandai habit sebagai selesai, mengedit habit, menghapus habit, atau menambahkan habit baru melalui tombol tambah yang tersedia pada halaman ini.
+
+Perlu diperhatikan bahwa daftar habit pada halaman ini **tidak otomatis ter-reset setiap hari**. Habit yang telah dibuat akan tetap tersimpan dan ditampilkan pada hari berikutnya. Oleh karena itu, pengguna dapat mengelola kembali habit tersebut secara manual sesuai kebutuhan. Jika habit tersebut masih ingin digunakan, pengguna dapat **menghapus tanda selesai (uncheck)** agar habit dapat dikerjakan kembali. Jika ada habit yang sudah tidak digunakan, pengguna dapat **menghapus habit** tersebut. Selain itu, pengguna juga dapat **mengedit data habit** apabila terdapat perubahan pada nama habit, kategori, target harian, atau catatan.
+
+Seperti halaman lainnya, tampilan Home Page juga mendukung **Light Mode** dan **Dark Mode** agar pengguna tetap nyaman menggunakan aplikasi dalam berbagai kondisi tampilan.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" /> | <img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/3aff687a-f127-4841-a001-5187e12b63bb" /> |
 
 ### Habit Form Page
 
-Digunakan untuk menambahkan atau mengedit habit.
+Halaman **Habit Form Page** digunakan ketika pengguna ingin menambahkan habit baru atau mengedit habit yang sudah ada.
+
+a. Form Tambah Habit
+
+Halaman **Form Tambah Habit** digunakan ketika pengguna ingin menambah data habit baru. Pada halaman ini pengguna diminta untuk mengisi beberapa informasi seperti **nama habit**, **kategori**, **target harian**, serta **catatan tambahan** jika diperlukan.
+    
+Form ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah sesuai, misalnya nama habit tidak boleh kosong, kategori harus dipilih terlebih dahulu, target harian tidak boleh kosong, serta catatan berupa opsional jadi pengguna bisa mengosongkan nya. Selain itu terdapat tombol **Tambah Habit** untuk menyimpan data habit ke database, serta tombol **Reset Form** untuk mengosongkan kembali seluruh input pada form.
+    
+Seperti halaman lainnya, tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode** sehingga tampilan aplikasi tetap nyaman digunakan sesuai tema yang dipilih oleh pengguna.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
+| <img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" /> | <img width="1918" height="1028" alt="Image" src="https://github.com/user-attachments/assets/6fa93eac-7526-4a63-81ce-853bc9600859" /> |
+
+b. Form Edit Habit
+
+Halaman **Form Edit Habit** digunakan ketika pengguna ingin memperbarui data habit yang sudah dibuat sebelumnya. Pada halaman ini, informasi habit yang dipilih akan otomatis ditampilkan di dalam form sehingga pengguna dapat dengan mudah mengubah data seperti **nama habit**, **kategori**, **target harian**, maupun **catatan tambahan**.
+
+Setelah melakukan perubahan, pengguna dapat menekan tombol **Update Habit** untuk menyimpan perubahan tersebut ke dalam database. Jika pengguna tidak ingin melanjutkan proses pengeditan, tersedia juga tombol **Batal** untuk kembali ke halaman sebelumnya tanpa menyimpan perubahan.
+
+Tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode**, sehingga tampilan aplikasi tetap nyaman digunakan sesuai tema yang dipilih oleh pengguna.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| Nama | Zahraturramadhani |
-
----
-
-# 🔐 Nilai Tambah
-
-Beberapa fitur tambahan yang diterapkan dalam aplikasi ini:
-
-- Supabase Authentication (Login & Register)
-- Dark Mode & Light Mode
-- Progress Bar Habit
-- Search Habit
-- Filter Kategori
-- Snackbar Notification
-- Environment Variables (.env) untuk keamanan API Key
+| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" /> | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/fa23fc1e-e0f0-475a-b340-da85d11a5631" /> |
 
 ---
 
@@ -302,101 +320,427 @@ Berikut adalah alur penggunaan aplikasi **HabitBloom**:
 
 ### 1️⃣ Welcome Page
 
-Saat aplikasi pertama kali dibuka, pengguna akan melihat **halaman Welcome** yang menampilkan nama aplikasi serta tombol untuk melanjutkan ke halaman login.
+Pada saat aplikasi HabitBloom pertama kali dibuka, pengguna akan melihat halaman Welcome Page. Halaman ini berfungsi sebagai tampilan pembuka yang menampilkan nama aplikasi, tagline, serta beberapa tombol yang dapat digunakan untuk masuk ke dalam aplikasi.
 
-Halaman ini berfungsi sebagai tampilan pembuka sebelum pengguna masuk ke dalam aplikasi.
+Di halaman ini pengguna diberikan dua pilihan, yaitu login jika sudah memiliki akun, atau register jika belum memiliki akun. Tampilan halaman ini juga dibuat menarik dengan ilustrasi dan warna yang lembut agar memberikan kesan nyaman saat pertama kali pengguna membuka aplikasi.
+
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" />
+
+Pada halaman Welcome Page terdapat dua aksi utama yang dapat dilakukan oleh pengguna:
+
+a. Login
+
+Jika pengguna menekan tombol Login, maka pengguna akan diarahkan ke halaman login. Pada halaman ini pengguna diminta untuk memasukkan email dan password yang sudah didaftarkan sebelumnya. Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi dan diarahkan ke halaman utama (Home Page).
+
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
+
+b. Register
+
+Jika pengguna belum memiliki akun, pengguna dapat menekan link Register yang tersedia pada halaman Welcome Page. Setelah itu pengguna akan diarahkan ke halaman pendaftaran akun. Pada halaman ini pengguna diminta untuk mengisi beberapa data seperti email, password, dan konfirmasi password untuk membuat akun baru. Setelah proses pendaftaran berhasil, pengguna dapat menggunakan akun tersebut untuk melakukan login ke dalam aplikasi.
+
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
+
+Pada halaman ini pengguna juga dapat mengatur tampilan aplikasi sesuai dengan preferensi mereka. Pengguna dapat mengganti tampilan menjadi Dark Mode atau Light Mode dengan menekan ikon yang berada di pojok kanan atas layar. Jika ikon tersebut ditekan, maka tampilan aplikasi akan berubah. Light Mode menampilkan tampilan dengan latar belakang yang terang, sedangkan Dark Mode menggunakan latar belakang yang lebih gelap. Fitur ini disediakan agar pengguna dapat menggunakan aplikasi dengan lebih nyaman, terutama saat digunakan dalam kondisi pencahayaan yang berbeda, misalnya pada malam hari atau di tempat yang minim cahaya. Dengan adanya fitur ini, pengguna dapat menyesuaikan tampilan aplikasi sesuai dengan kenyamanan masing-masing.
+
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/d3ad5335-6c72-4b87-b3f6-3d7b25369051" />
 
 ---
 
 ### 2️⃣ Login Page
 
-Setelah menekan tombol login, pengguna akan diarahkan ke **halaman Login**.
+Pada halaman Login Page, pengguna diminta untuk memasukkan email dan password yang telah didaftarkan sebelumnya. Kedua data tersebut digunakan sebagai proses autentikasi agar pengguna dapat masuk ke dalam aplikasi.
 
-Pada halaman ini pengguna harus memasukkan:
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" />
 
-- Email
-- Password
+Sebagai contoh disini saya mengisi field email dengan **lisa@gmail.com** dan mengisi field password dengan 8 karakter yang telah didaftarkan sebelumnya di halaman registrasi,
 
-Jika data yang dimasukkan benar, maka pengguna akan berhasil masuk ke dalam aplikasi.
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/de93dae8-d9a7-4fc5-8ef4-0c25b8049339" />
 
-Apabila belum memiliki akun, pengguna dapat memilih menu **Register** untuk membuat akun baru.
+Jika email dan password yang dimasukkan sesuai dengan data yang tersimpan di sistem, maka pengguna akan berhasil login dan akan muncul popup notifikasi yang menampilkan pesan bahwa proses login berhasil dilakukan. Setelah proses login berhasil, pengguna akan diarahkan ke halaman utama aplikasi.
+
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/5f31265e-55bf-4b9c-8d41-21e322855542" />
+
+Apabila pengguna belum memiliki akun, pengguna dapat memilih menu Register untuk membuat akun baru terlebih dahulu sebelum melakukan login.
+
+##### Validasi Input Login Page
+
+Pada halaman login juga diterapkan beberapa validasi untuk memastikan data yang dimasukkan oleh pengguna sudah sesuai.
+
+1. Login tanpa mengisi email dan password
+  
+   Jika pengguna langsung menekan tombol Login tanpa mengisi email dan password, maka sistem akan menampilkan pesan peringatan bahwa email dan password wajib diisi.
+
+   ><img width="1918" height="1029" alt="Image" src="https://github.com/user-attachments/assets/45b02eab-8f55-4f8f-b9d3-83c3568e1a46" />
+
+2. Login dengan format email atau password yang tidak sesuai
+  
+   Jika pengguna memasukkan email dengan format yang tidak sesuai atau password yang tidak memenuhi ketentuan, maka sistem akan menampilkan pesan kesalahan pada form input. Hal ini bertujuan untuk memastikan bahwa data yang dimasukkan oleh pengguna sudah sesuai dengan format yang ditentukan oleh sistem.
+
+   ><img width="1919" height="1035" alt="Image" src="https://github.com/user-attachments/assets/2a2e21f6-c112-48ba-a02c-41ea022e4e86" />
+
+3. Login dengan akun yang tidak terdaftar
+  
+   Jika pengguna memasukkan email dan password yang tidak terdaftar di dalam sistem, maka proses login tidak akan berhasil. Sistem akan menampilkan notifikasi kesalahan yang memberitahukan bahwa email atau password yang dimasukkan tidak valid sehingga pengguna perlu memeriksa kembali data yang dimasukkan.
+
+   ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/58ab6ed0-940c-40cc-b117-61665670d173" />
 
 ---
 
 ### 3️⃣ Register Page
 
-Pada halaman ini pengguna dapat membuat akun baru dengan mengisi:
+Pada halaman Register Page, pengguna dapat membuat akun baru agar bisa menggunakan aplikasi HabitBloom. Untuk membuat akun, pengguna perlu mengisi beberapa data yaitu email, password, dan konfirmasi password. Data akun yang dimasukkan akan disimpan menggunakan layanan Supabase Authentication, sehingga akun dapat digunakan untuk login ke dalam aplikasi.
 
-- Email
-- Password
-- Konfirmasi Password
+Pada gambar ini ditampilkan halaman Register yang berisi form pendaftaran akun. Pengguna diminta untuk mengisi email, password, dan konfirmasi password. Setelah semua data diisi dengan benar, pengguna dapat menekan tombol Register untuk membuat akun baru.
 
-Data akun yang dibuat akan disimpan menggunakan **Supabase Authentication**.
+><img width="1914" height="1030" alt="Image" src="https://github.com/user-attachments/assets/0837f616-58e4-439e-aaa2-565895e85840" />
 
-Setelah berhasil register, pengguna dapat login menggunakan akun tersebut.
+Pada gambar ini ditunjukkan contoh ketika pengguna sudah mengisi data pada form register. Email, password, dan konfirmasi password telah diisi sesuai dengan format yang diperlukan. Jika semua data sudah benar, pengguna dapat menekan tombol Register untuk melanjutkan proses pendaftaran akun.
+
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/6d462825-430f-40a4-a4b3-a4e5cfbd6ea7" />
+
+Setelah proses pendaftaran berhasil, sistem akan menampilkan popup notifikasi yang menunjukkan bahwa registrasi telah berhasil dilakukan. Pada popup tersebut terdapat pesan bahwa akun telah berhasil dibuat dan pengguna dapat melanjutkan dengan melakukan login menggunakan akun yang telah didaftarkan.
+
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/46d9009e-6b11-42fa-a5e0-ce226832ef42" />
+
+##### Validasi Input Register Page
+
+Pada halaman register juga diterapkan beberapa validasi untuk memastikan data yang dimasukkan oleh pengguna sudah sesuai dengan ketentuan yang berlaku.
+
+1. Register tanpa mengisi data
+  
+   Pada gambar ini ditunjukkan kondisi ketika pengguna langsung menekan tombol Register tanpa mengisi email, password, maupun konfirmasi password. Sistem akan menampilkan pesan peringatan pada setiap field yang kosong untuk memberi tahu bahwa data tersebut wajib diisi sebelum proses pendaftaran dapat dilakukan.
+
+   ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/7143e55a-4850-47c1-adf5-c561baec08ae" />
+
+2. Format email atau password tidak sesuai
+  
+   Pada gambar ini pengguna memasukkan email dengan format yang tidak sesuai serta password yang tidak memenuhi ketentuan. Selain itu, konfirmasi password juga tidak sama dengan password yang dimasukkan. Sistem akan menampilkan pesan kesalahan untuk memberitahu pengguna bahwa data yang dimasukkan belum sesuai sehingga perlu diperbaiki terlebih dahulu.
+
+   ><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/727091e4-dc82-49bd-865f-216105bf08b0" />
+
+3. Email sudah terdaftar di sistem
+  
+   Pada gambar ini pengguna mencoba melakukan pendaftaran menggunakan email yang sudah pernah digunakan sebelumnya. Sistem akan menolak proses registrasi dan menampilkan notifikasi bahwa email tersebut sudah digunakan. Pengguna diminta untuk menggunakan email lain agar dapat membuat akun baru.
+
+   ><img width="1918" height="1033" alt="Image" src="https://github.com/user-attachments/assets/45a1cd2d-4f14-4ba3-95f9-ef19027f70a6" />
 
 ---
 
 ### 4️⃣ Home Page
 
-Setelah login berhasil, pengguna akan diarahkan ke **halaman utama (Home Page)**.
+Setelah pengguna berhasil melakukan login, pengguna akan diarahkan ke **halaman utama aplikasi (Home Page)**.
 
-Pada halaman ini pengguna dapat melihat:
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f51e7892-2a1d-4244-b935-db5c8cc47d50" />
 
-- Daftar habit yang telah dibuat
-- Progress habit yang telah selesai
-- Fitur pencarian habit
-- Filter kategori habit
+Pada halaman ini pengguna dapat melihat daftar habit yang telah dibuat, progress penyelesaian habit, serta beberapa fitur lain yang membantu pengguna dalam mengelola kebiasaan sehari-hari.
 
-Selain itu terdapat **progress bar** yang menunjukkan jumlah habit yang telah selesai dibandingkan total habit yang ada.
+a. Filter kategori
+
+Pada bagian ini pengguna dapat melakukan filter habit berdasarkan kategori tertentu. Ketika ikon filter ditekan, akan muncul daftar kategori seperti Akademik, Kesehatan, Fitness, Produktivitas, dan beberapa kategori lainnya. Pengguna dapat memilih salah satu kategori untuk menampilkan habit yang sesuai dengan kategori tersebut.
+
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f34220b1-55a0-4816-98bd-f0d234b17a8b" />
+
+- **Ada data pada kategori tersebut**
+
+  Jika kategori yang dipilih memiliki data habit, maka sistem akan menampilkan daftar habit yang termasuk dalam kategori tersebut. Hal ini memudahkan pengguna untuk melihat habit berdasarkan jenis aktivitas yang ingin dilakukan.
+
+  ><img width="1917" height="1036" alt="Image" src="https://github.com/user-attachments/assets/fbfc742b-45f5-4e3a-b898-0155bfe2085c" />
+  
+- **Tidak ada data pada kategori tersebut**
+
+  Jika kategori yang dipilih tidak memiliki data habit, maka sistem akan menampilkan pesan bahwa tidak ada habit untuk kategori tersebut. Pengguna juga dapat menekan tombol reset filter untuk kembali menampilkan semua habit yang ada.
+
+  ><img width="1916" height="1033" alt="Image" src="https://github.com/user-attachments/assets/a054f11b-631c-47fd-9d19-c226bc9bdc4c" />
+
+b. Mengganti tampilan Dark Mode dan Light Mode
+
+Pada bagian pojok kanan atas terdapat ikon yang dapat digunakan untuk mengganti tampilan aplikasi. Jika ikon tersebut ditekan, pengguna dapat mengubah tampilan menjadi Dark Mode atau Light Mode sesuai dengan preferensi masing-masing. Fitur ini membantu pengguna agar tetap nyaman saat menggunakan aplikasi dalam kondisi pencahayaan yang berbeda.
+
+><img width="1916" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3effe7ee-ee7c-40ac-9a08-62c679c24041" />
+
+c. Profile dan Logout
+
+Pada ikon profil yang terdapat di pojok kanan atas, pengguna dapat melihat informasi akun yang sedang digunakan. Pada menu ini juga tersedia tombol Logout yang dapat digunakan jika pengguna ingin keluar dari aplikasi.
+
+><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/3a3cf49d-6982-455b-b554-3719c051d511" />
+
+d. Greeting sesuai waktu
+
+Pada bagian atas halaman Home terdapat sapaan otomatis yang menyesuaikan waktu penggunaan aplikasi, seperti Good Morning, Good Afternoon, atau Good Evening. Sapaan ini juga menampilkan nama pengguna yang digunakan saat login.
+
+><img width="1917" height="119" alt="Image" src="https://github.com/user-attachments/assets/fc8c22f5-a8c0-4e05-bcbb-99fe43a5cfaa" />
+
+e. Quotes motivasi
+
+Di bawah bagian greeting terdapat quotes motivasi yang muncul secara acak setiap kali pengguna membuka aplikasi. Quotes ini bertujuan untuk memberikan motivasi kepada pengguna agar tetap konsisten dalam menjalankan kebiasaan yang telah dibuat.
+
+><img width="1892" height="72" alt="Image" src="https://github.com/user-attachments/assets/ae9a0376-8c08-4c1c-860e-49fdc4380dc8" />
+
+f. Statistik habit yang telah diselesaikan
+
+Pada bagian ini pengguna dapat melihat jumlah habit yang telah diselesaikan serta persentase penyelesaiannya. Statistik ini membantu pengguna untuk memantau perkembangan habit yang telah dilakukan.
+
+><img width="1919" height="157" alt="Image" src="https://github.com/user-attachments/assets/bab300d1-405b-439e-b61c-22dd533f657c" />
+
+g. Progress bar
+
+Progress bar digunakan untuk menampilkan perkembangan penyelesaian habit pada hari tersebut. Jika pengguna telah menyelesaikan beberapa habit, maka progress bar akan bertambah sesuai jumlah habit yang telah diselesaikan.
+
+><img width="1916" height="109" alt="Image" src="https://github.com/user-attachments/assets/b1d3c0f4-b107-44bb-9ed0-2e8331e4eead" />
+
+h. Search bar
+
+Search bar digunakan untuk mencari habit tertentu dengan lebih cepat. Pengguna hanya perlu mengetikkan kata kunci pada kolom pencarian, kemudian sistem akan menampilkan habit yang sesuai dengan kata kunci tersebut.
+
+><img width="1917" height="69" alt="Image" src="https://github.com/user-attachments/assets/5ed41837-9ae4-489d-bcb5-b6e8277f4cdd" />
+
+- **Jika habit ditemukan**
+
+  Jika habit yang dicari tersedia, maka habit tersebut akan langsung ditampilkan pada daftar habit.
+
+  ><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/7822530d-7bf4-4ae4-91bc-046e9612749f" />
+
+- **Jika habit tidak ditemukan**
+
+  Jika habit yang dicari tidak ada, maka sistem akan menampilkan pesan bahwa habit tidak ditemukan, serta memberikan opsi untuk mereset pencarian.
+
+  ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/bf7dc3b2-79a4-45f8-9cdc-682bd42517df" />
+
+i. Daftar habit yang belum dan sudah diselesaikan
+
+Pada halaman ini habit akan ditampilkan dalam dua bagian, yaitu habit yang belum diselesaikan dan habit yang sudah diselesaikan pada hari tersebut. Hal ini memudahkan pengguna untuk melihat progress aktivitas yang telah dilakukan.
+
+><img width="1919" height="627" alt="Image" src="https://github.com/user-attachments/assets/88bc8234-2882-4967-8ad3-413828ac8a42" />
+
+j. Checkbox, edit, dan hapus habit
+
+Pada setiap habit terdapat beberapa tombol aksi yang dapat digunakan oleh pengguna, yaitu:
+
+- Checkbox untuk menandai bahwa habit telah diselesaikan
+
+- Edit untuk mengubah data habit
+
+- Delete untuk menghapus habit dari daftar
+
+><img width="1915" height="150" alt="Image" src="https://github.com/user-attachments/assets/158b6607-15f2-4002-b08a-40dc5e730913" />
+
+k. Menambahkan habit baru
+
+Pada bagian pojok kanan bawah terdapat tombol ikon tambah (+). Jika tombol ini ditekan, pengguna akan diarahkan ke halaman Tambah Habit untuk membuat habit baru.
+
+><img width="1919" height="734" alt="Image" src="https://github.com/user-attachments/assets/08888006-7275-432d-a342-36c824b8aab6" />
+
+l. Tampilan jika belum ada habit
+
+Jika pengguna belum menambahkan habit apa pun, maka halaman Home akan menampilkan pesan “Belum ada habit”. Pengguna dapat menekan tombol tambah (+) untuk membuat habit pertama mereka.
+
+><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/fb93e17f-96f4-41f7-97da-5e33a785133b" />
 
 ---
 
 ### 5️⃣ Tambah Habit
 
-Pengguna dapat menambahkan habit baru dengan menekan tombol **Floating Action Button (+)**.
+Pada halaman ini pengguna dapat menambahkan habit baru dengan menekan tombol Floating Action Button (+) yang terdapat pada halaman utama. Setelah tombol tersebut ditekan, pengguna akan diarahkan ke halaman Tambah Habit yang berisi form untuk mengisi data habit yang ingin dibuat.
 
-Pada halaman form, pengguna diminta mengisi:
+Pada form ini pengguna diminta untuk mengisi beberapa data seperti nama habit, kategori, target harian, serta catatan tambahan (opsional). Selain itu terdapat juga tombol Tambah Habit untuk menyimpan data dan tombol Reset Form untuk mengosongkan semua input yang telah diisi. Setelah data diisi dan disimpan, habit tersebut akan langsung muncul pada daftar habit di halaman utama. 
 
-- Nama Habit
-- Kategori
-- Target Harian
-- Catatan (opsional)
+><img width="1919" height="1034" alt="Image" src="https://github.com/user-attachments/assets/947713ba-8546-4480-b1db-0931afbe972b" />
 
-Setelah data disimpan, habit akan langsung muncul pada halaman utama.
+Pada gambar ini ditunjukkan contoh ketika pengguna telah mengisi data pada form tambah habit. Sebagai contoh, pengguna menambahkan habit Minum Air Putih dengan kategori Kesehatan, target harian 8 gelas per hari, serta catatan tambahan mengenai tujuan dari habit tersebut. Setelah semua data diisi, pengguna dapat menekan tombol Tambah Habit untuk menyimpan data.
+
+><img width="1916" height="1036" alt="Image" src="https://github.com/user-attachments/assets/54a3320d-df5a-4c33-817d-1602ead2e4f5" />
+
+Setelah data habit berhasil ditambah, sistem akan menampilkan popup notifikasi yang memberi tahu bahwa habit berhasil ditambahkan. Notifikasi ini bertujuan untuk memberikan konfirmasi kepada pengguna bahwa data yang dimasukkan telah tersimpan di dalam sistem.
+
+><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/0defa5a0-1ee0-4199-a3cd-b904a8abb168" />
+
+Setelah habit berhasil ditambahkan, data tersebut akan langsung muncul pada daftar habit di halaman utama. Dengan demikian pengguna dapat langsung melihat habit yang baru dibuat dan mulai menjalankannya sesuai dengan target yang telah ditentukan
+
+><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/46c08cd7-71e0-4f8c-b96b-c8a90e7b941a" />
+
+##### Validasi Input Tambah Habit
+
+Pada halaman tambah habit juga terdapat beberapa validasi input untuk memastikan data yang dimasukkan oleh pengguna sudah sesuai.
+
+1. Menekan tombol tambah tanpa mengisi data
+
+   Jika pengguna langsung menekan tombol Tambah Habit tanpa mengisi data pada form, maka sistem akan menampilkan pesan peringatan bahwa beberapa field seperti nama habit, kategori, dan target harian wajib diisi terlebih dahulu.
+
+   ><img width="1917" height="1033" alt="Image" src="https://github.com/user-attachments/assets/ca8f5bef-48a7-4c88-a858-5d7c78841851" />
+
+2. Data yang dimasukkan tidak sesuai
+
+   Pada gambar ini ditunjukkan kondisi ketika pengguna memasukkan data yang tidak sesuai dengan ketentuan. Misalnya nama habit terlalu pendek, target harian tidak sesuai, atau catatan yang dimasukkan terlalu panjang. Sistem akan menampilkan pesan kesalahan agar pengguna memperbaiki data yang dimasukkan.
+
+   ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/816fb19f-38da-4d84-b72b-6ec43246bf84" />
+
+3. Reset form
+
+   Pada halaman ini juga terdapat tombol Reset Form yang berfungsi untuk menghapus semua data yang telah dimasukkan pada form. Ketika tombol reset ditekan, sistem akan menampilkan konfirmasi terlebih dahulu untuk memastikan apakah pengguna benar-benar ingin menghapus semua input yang ada.
+
+   ><img width="1918" height="1026" alt="Image" src="https://github.com/user-attachments/assets/828c36c7-a9e0-4852-8ac1-68b62ba429d7" />
+
+   - **Jika memilih batal**
+
+     Jika pengguna memilih Batal, maka form akan tetap seperti sebelumnya dan data yang telah dimasukkan tidak akan dihapus.
+   
+     ><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/25263b18-be00-4e5a-bc47-fe1bab33cbe1" />
+
+   - **Jika memilih reset**
+
+     Jika pengguna memilih Reset, maka semua data pada form akan dikosongkan dan sistem akan menampilkan notifikasi bahwa form telah berhasil direset.
+
+     ><img width="1915" height="1034" alt="Image" src="https://github.com/user-attachments/assets/b12b0055-cd17-4fe8-9df5-e0d2506f44e9" />
+
+4. Konfirmasi ketika keluar dari halaman
+
+   Jika pengguna menekan tombol Back pada AppBar saat data pada form belum disimpan, maka sistem akan menampilkan peringatan bahwa masih terdapat perubahan yang belum disimpan.
+
+   ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/d657fee5-29d3-468b-b1cf-d8c4f2645bc6" />
+
+   - Lanjutkan edit
+
+     Jika pengguna memilih Lanjut Edit, maka pengguna akan tetap berada di halaman form untuk melanjutkan pengisian data.
+
+     ><img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/912024ba-f5d5-40ee-b990-e3d88900bb29" />
+
+   - Tetap keluar
+
+     Jika pengguna memilih Tetap Keluar, maka pengguna akan keluar dari halaman tambah habit dan kembali ke halaman utama aplikasi.
+   
+     ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/703a1ca7-1844-4221-9f1d-8e226ead0ca9" />
 
 ---
 
 ### 6️⃣ Menandai Habit Selesai
 
-Setiap habit memiliki tombol **check**.
+Pada halaman utama aplikasi, setiap habit memiliki tombol check berbentuk lingkaran di bagian kanan. Tombol ini digunakan untuk menandai apakah habit tersebut sudah dikerjakan atau belum. Ketika pengguna menekan tombol tersebut, habit akan langsung ditandai sebagai selesai dan tampilannya akan berpindah ke bagian Completed Today. Selain itu, progress habit pada halaman utama juga akan otomatis diperbarui.
 
-Ketika tombol tersebut ditekan:
+Pada gambar ini terlihat daftar habit yang ada pada bagian Today's Habits. Setiap habit memiliki tombol check berbentuk lingkaran di sisi kanan. Pengguna dapat menekan tombol tersebut untuk menandai bahwa habit tersebut sudah diselesaikan pada hari itu.
 
-- Habit akan ditandai sebagai selesai
-- Tampilan habit akan berubah
-- Progress habit akan diperbarui
+><img width="1917" height="142" alt="Image" src="https://github.com/user-attachments/assets/1c0f3e82-c609-42f0-b7d1-0d12f4f377bc" />
+
+- Habit Berpindah ke Completed Today
+
+  Setelah pengguna menekan tombol check, habit tersebut akan langsung berpindah dari daftar Today's Habits ke bagian Completed Today. Selain itu, sistem juga menampilkan notifikasi berupa snackbar yang memberi tahu bahwa habit tersebut telah berhasil diselesaikan.
+
+  ><img width="1918" height="427" alt="Image" src="https://github.com/user-attachments/assets/8cf4f06a-c7c7-4609-8fa4-d48194ca3357" />
+  
+  Ketika sebuah habit berhasil diselesaikan, sistem akan memperbarui statistik pada bagian atas halaman. Jumlah habit yang sudah selesai akan bertambah, begitu juga dengan progress bar yang menunjukkan persentase penyelesaian habit pada hari tersebut.
+
+  ><img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/4311c96e-5ff1-4b56-94c3-cf6f8586b216" />
+
+  ><img width="1918" height="1030" alt="Image" src="https://github.com/user-attachments/assets/b65f866a-412c-4e97-82d5-2809173fab68" />
+
+- Jika pengguna ingin membatalkan habit yang sudah ditandai selesai, pengguna dapat menekan kembali tombol check pada habit tersebut. Setelah itu, habit akan kembali ke daftar Today's Habits dan otomatis keluar dari bagian Completed Today. Progress dan statistik juga akan kembali menyesuaikan dengan jumlah habit yang tersisa.
+
+  ><img width="1916" height="1030" alt="Image" src="https://github.com/user-attachments/assets/f508236e-a747-4cf7-b345-3442422481cc" />
 
 ---
 
 ### 7️⃣ Edit Habit
 
-Pengguna dapat mengedit habit dengan menekan ikon **edit**.
+Pada aplikasi HabitBloom, pengguna juga dapat memperbarui data habit yang sudah dibuat sebelumnya. Untuk melakukan hal ini, pengguna cukup menekan ikon edit berbentuk pensil yang terdapat di sebelah kanan setiap habit. Setelah ikon tersebut ditekan, pengguna akan diarahkan ke halaman Edit Habit yang berisi form dengan data habit yang sudah ada sebelumnya. Melalui halaman ini, pengguna dapat mengubah informasi seperti nama habit, kategori, target harian, maupun catatan tambahan.
 
-Data habit akan muncul kembali pada halaman form sehingga pengguna dapat memperbarui informasi yang diperlukan.
+Pada gambar ini ditampilkan halaman Edit Habit yang berisi form untuk memperbarui data habit. Data habit yang sebelumnya telah dibuat akan otomatis muncul pada form, sehingga pengguna tidak perlu mengisi dari awal. Pengguna hanya perlu mengubah bagian yang ingin diperbarui, kemudian menekan tombol Update Habit untuk menyimpan perubahan tersebut.
+
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" />
+
+Pada gambar ini ditunjukkan contoh data habit sebelum dilakukan perubahan. Habit yang ditampilkan memiliki nama Baca buku tentang kesehatan dengan kategori Produktivitas dan target 4 lembar. Data ini dapat diubah sesuai dengan kebutuhan pengguna.
+
+><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/32679fa9-dbc9-43a1-a768-3544a8b25971" />
+
+Pada gambar ini pengguna melakukan perubahan pada data habit dengan menambahkan catatan tambahan, yaitu membaca buku kesehatan minimal sebelum tidur dan mengubah target harian dari 4 lembar menjadi 4 halaman. Setelah perubahan dilakukan, pengguna dapat menekan tombol Update Habit untuk menyimpan data yang telah diperbarui.
+
+><img width="1919" height="1035" alt="Image" src="https://github.com/user-attachments/assets/efb34430-6801-4619-b302-87c1183b5f6c" />
+
+Setelah tombol Update Habit ditekan dan data berhasil diperbarui, sistem akan menampilkan popup notifikasi yang memberi tahu bahwa habit telah berhasil diperbarui. Notifikasi ini bertujuan untuk memberikan konfirmasi kepada pengguna bahwa perubahan data telah berhasil disimpan.
+
+><img width="1913" height="1030" alt="Image" src="https://github.com/user-attachments/assets/85fb41e6-f671-4d41-a66d-3b737075691e" />
+
+Setelah proses edit selesai, pengguna akan kembali ke halaman utama dan data habit akan tampil sesuai dengan perubahan yang telah dilakukan sebelumnya. Dengan demikian, pengguna dapat langsung melihat hasil pembaruan data pada daftar h
+
+><img width="1915" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4b4a3146-6b15-431d-a6c5-974eae04b54a" />
+
+##### Validasi Input Edit Habit
+
+Selain itu, pada halaman edit habit juga terdapat beberapa validasi untuk memastikan perubahan data yang dilakukan oleh pengguna tetap sesuai dengan aturan yang telah ditentukan.
+
+1.  Menekan tombol update tanpa mengubah data
+
+    Jika pengguna menekan tombol Update Habit tanpa melakukan perubahan apa pun pada data yang ada, maka sistem akan menampilkan notifikasi bahwa tidak ada perubahan data. Setelah itu pengguna akan diarahkan kembali ke halaman utama.
+  
+     ><img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/271cb27c-f501-429b-811d-47f27b3fd9bb" />
+
+2. Keluar dari halaman edit saat data belum disimpan
+  
+   Apabila pengguna telah melakukan perubahan pada form tetapi menekan tombol Batal sebelum menyimpan perubahan, maka sistem akan menampilkan peringatan bahwa perubahan belum disimpan. Pengguna kemudian diberikan dua pilihan, yaitu melanjutkan edit atau tetap keluar dari halaman edit. ke home page
+
+    ><img width="1919" height="1027" alt="Image" src="https://github.com/user-attachments/assets/ef9cd80a-16c4-4922-9cca-31a3640f7371" />
+
+3. Tombol Back pada AppBar
+  
+    Fungsi tombol Back pada AppBar juga sama seperti tombol Batal pada form. Jika terdapat perubahan yang belum disimpan, maka sistem akan menampilkan konfirmasi terlebih dahulu sebelum pengguna keluar dari halaman edit.
+  
+   ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/e051fd43-7a6a-45b2-9dd9-d6dd070d6668" />
+     
+4. Keluar tanpa melakukan perubahan
+
+   Jika pengguna menekan tombol Batal atau tombol Back tanpa melakukan perubahan pada data habit, maka pengguna dapat langsung keluar dari halaman edit dan kembali ke halaman utama tanpa menampilkan peringatan.n kembali ke homepage
+
+
+5. Habit yang sudah selesai tidak dapat diedit
+
+   Untuk habit yang sudah ditandai sebagai Completed Today, ikon edit tidak dapat digunakan. Hal ini dilakukan untuk menjaga konsistensi data habit yang sudah diselesaikan pada hari tersebut.
+
+     ><img width="1919" height="193" alt="Image" src="https://github.com/user-attachments/assets/aa877430-2735-43e6-8484-e2f072079ba5" />
 
 ---
 
 ### 8️⃣ Hapus Habit
 
-Habit yang tidak diperlukan dapat dihapus dengan menekan ikon **delete**.
+Pada aplikasi HabitBloom, pengguna juga dapat menghapus habit yang sudah tidak diperlukan. Untuk melakukan hal ini, pengguna cukup menekan ikon delete (ikon tempat sampah) yang terdapat di sebelah kanan setiap habit. Ketika ikon tersebut ditekan, aplikasi akan menampilkan dialog konfirmasi terlebih dahulu untuk memastikan bahwa pengguna benar-benar ingin menghapus habit tersebut.
 
-Aplikasi akan menampilkan **dialog konfirmasi** sebelum habit benar-benar dihapus dari database.
+Pada gambar ini terlihat daftar habit pada halaman utama. Setiap habit memiliki beberapa ikon aksi di bagian kanan, yaitu checkbox untuk menandai selesai, ikon edit untuk mengubah data habit, dan ikon delete untuk menghapus habit. Jika pengguna menekan ikon delete, maka sistem akan menampilkan dialog konfirmasi sebelum data benar-benar dihapus.
+
+<img width="1600" height="860" alt="Image" src="https://github.com/user-attachments/assets/c71e0ef8-6ec2-48bd-9039-db301ff48889" />
+
+Sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB". Pada gambar ini ditampilkan popup konfirmasi penghapusan habit. Dialog ini muncul untuk memastikan bahwa pengguna tidak sengaja menghapus data. Pada dialog tersebut terdapat dua pilihan, yaitu Batal untuk membatalkan proses penghapusan dan Ya, Hapus untuk melanjutkan penghapusan habit.
+
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/7223bd08-301d-4bbd-ba81-fcf8ad106cf5" />
+
+a. Jika Memilih Batal
+
+Apabila pengguna memilih tombol Batal, maka proses penghapusan akan dibatalkan dan data habit akan tetap berada pada daftar habit seperti sebelumnya. Dengan demikian tidak ada perubahan data yang terjadi pada aplikasi.
+
+><img width="1918" height="1027" alt="Image" src="https://github.com/user-attachments/assets/b0e76449-60f3-4f94-9bbe-f948627f5cc5" />
+
+b. Jika Memilih Ya, Hapus
+
+Jika pengguna memilih tombol Ya, Hapus, maka habit akan dihapus dari daftar habit. Setelah itu sistem akan menampilkan popup notifikasi yang menyatakan bahwa habit berhasil dihapus dari sistem.
+
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f895d4be-ed10-46dd-9334-9cf35b8477b1" />
+
+Setelah proses penghapusan berhasil dilakukan, data habit tidak lagi muncul pada daftar habit di halaman utama. Daftar habit akan otomatis diperbarui sesuai dengan data yang tersisa di dalam sistem.
+
+><img width="1600" height="857" alt="Image" src="https://github.com/user-attachments/assets/a9361869-ce9b-432f-bfd8-0e7acd7d453f" />
 
 ---
 
 ### 9️⃣ Logout
 
-Pengguna dapat keluar dari aplikasi dengan menekan tombol **Logout** pada menu profil.
+Pengguna dapat keluar dari aplikasi dengan menekan tombol **Logout** pada menu profil. Setelah logout, pengguna akan kembali ke **halaman Welcome**.
 
-Setelah logout, pengguna akan kembali ke **halaman Welcome**.
+Pada bagian ini juga ditampilkan contoh popup ketika pengguna melakukan logout dari aplikasi. Setelah menekan tombol logout, sistem akan menampilkan pesan Terima Kasih telah menggunakan HabitBloom sebelum pengguna diarahkan kembali ke halaman Welcome Page.
+
+<img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/ca413036-5c8d-41cb-82da-298d1df999d0" />
+
+Akan muncul pop up 2 pilihan:
+
+><img width="1600" height="858" alt="Image" src="https://github.com/user-attachments/assets/d0ea0a0f-b368-4e15-a5e6-c9e4d5408de0" />
+
+a. Jika memilih batal maka pengguna akan tetap berada di homepage aplikasi.
+
+b. Jika ya,logout maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
+
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/727323d6-573f-4644-acc5-cfd1d0200570" />
