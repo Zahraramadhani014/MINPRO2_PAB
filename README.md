@@ -412,6 +412,14 @@ a. filter kategori
 
 ><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f34220b1-55a0-4816-98bd-f0d234b17a8b" />
 
+- ada data kategori itu
+
+  ><img width="1917" height="1036" alt="Image" src="https://github.com/user-attachments/assets/fbfc742b-45f5-4e3a-b898-0155bfe2085c" />
+  
+- ga ada kategori tersebut
+
+  ><img width="1916" height="1033" alt="Image" src="https://github.com/user-attachments/assets/a054f11b-631c-47fd-9d19-c226bc9bdc4c" />
+
 b. Ganti mode dark/light
 
 ><img width="858" height="462" alt="Image" src="https://github.com/user-attachments/assets/3effe7ee-ee7c-40ac-9a08-62c679c24041" />
@@ -440,6 +448,14 @@ h. search bar
 
 ><img width="1917" height="69" alt="Image" src="https://github.com/user-attachments/assets/5ed41837-9ae4-489d-bcb5-b6e8277f4cdd" />
 
+- ada data
+
+  ><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/7822530d-7bf4-4ae4-91bc-046e9612749f" />
+
+- ga ada data
+
+  ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/bf7dc3b2-79a4-45f8-9cdc-682bd42517df" />
+
 i. daftar habit yang belum diselesakan dan sudah diselesaikan
 
 ><img width="1919" height="627" alt="Image" src="https://github.com/user-attachments/assets/88bc8234-2882-4967-8ad3-413828ac8a42" />
@@ -451,6 +467,11 @@ j. checkbox, edit, dan hapus habit
 k. tambah habit klik ikon (+)
 
 ><img width="1919" height="734" alt="Image" src="https://github.com/user-attachments/assets/08888006-7275-432d-a342-36c824b8aab6" />
+
+l. Tampilan home page ketika habit belum ada di list
+
+><img width="1919" height="1029" alt="Image" src="https://github.com/user-attachments/assets/fb93e17f-96f4-41f7-97da-5e33a785133b" />
+
 ---
 
 ### 5️⃣ Tambah Habit
@@ -513,7 +534,7 @@ Setiap habit memiliki tombol **check**. Ketika tombol tersebut ditekan Habit aka
 
 untuk menandai habit yang sudah selesai pengguna tinggal klik tombol **check** berbentuk bulat yang ada disetiap habit
 
-><img width="1919" height="140" alt="Image" src="https://github.com/user-attachments/assets/3e6ce4c9-1df7-44a5-ab3d-2757e5f32f4a" />
+><img width="1917" height="142" alt="Image" src="https://github.com/user-attachments/assets/1c0f3e82-c609-42f0-b7d1-0d12f4f377bc" />
 
 - jika sudah menandai habit maka langsung masuk ke list completed today dan muncul snackbar, seperti gambar dibawah
 
@@ -536,25 +557,79 @@ untuk menandai habit yang sudah selesai pengguna tinggal klik tombol **check** b
 
 ### 7️⃣ Edit Habit
 
-Pengguna dapat mengedit habit dengan menekan ikon **edit**.
+Pengguna dapat mengedit habit dengan menekan ikon **edit** yang berbentuk ikon pensil yang ada di setiap habit. Data habit akan muncul kembali pada halaman form sehingga pengguna dapat memperbarui informasi yang diperlukan.
 
-Data habit akan muncul kembali pada halaman form sehingga pengguna dapat memperbarui informasi yang diperlukan.
+><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" />
 
-<img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/3f160db2-437b-448c-a1c3-b11b42a172ee" />
+sebagai contoh saya mau mengubah habit yang awalnya begini 
 
+><img width="1919" height="1037" alt="Image" src="https://github.com/user-attachments/assets/32679fa9-dbc9-43a1-a768-3544a8b25971" />
+
+jadi begini
+
+><img width="1919" height="1035" alt="Image" src="https://github.com/user-attachments/assets/efb34430-6801-4619-b302-87c1183b5f6c" />
+
+kalau berhasil muncul pop up
+
+><img width="1913" height="1030" alt="Image" src="https://github.com/user-attachments/assets/85fb41e6-f671-4d41-a66d-3b737075691e" />
+
+data di home page berubah sesuai data yang kita edit
+
+><img width="1915" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4b4a3146-6b15-431d-a6c5-974eae04b54a" />
+
+##### Validasi Input Edit Habit
+
+1.  klik tombol edit habit tanpa mengubah data
+  
+   ><img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/271cb27c-f501-429b-811d-47f27b3fd9bb" />
+
+2. jika melakukan perubahan tetapi belum klik tombol edit habit dan malah klik tombol batal maka akan muncul pop up seperti gambar dibawah. jika klik lanjut edit maka akan tetap di form edit habit, jika klik tetap keluar maka akan kembali ke home page
+
+   ><img width="1919" height="1027" alt="Image" src="https://github.com/user-attachments/assets/ef9cd80a-16c4-4922-9cca-31a3640f7371" />
+
+3.  untuk tombol back di app bar juga sama saja fungsinya kayak tombol batal di form edit habit
+
+   ><img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/e051fd43-7a6a-45b2-9dd9-d6dd070d6668" />
+
+4.  jika klik tombol batal dan back di app bar  tanpa edit data, maka bisa langsung keluar dari halaman edit dan kembali ke homepage
+
+5.  untuk habit yang completed maka tombol edit yang berbentuk pensil tidak bisa di klik
+
+   ><img width="1919" height="193" alt="Image" src="https://github.com/user-attachments/assets/aa877430-2735-43e6-8484-e2f072079ba5" />
 
 ---
 
 ### 8️⃣ Hapus Habit
 
-Habit yang tidak diperlukan dapat dihapus dengan menekan ikon **delete**.
+Habit yang tidak diperlukan dapat dihapus dengan menekan ikon **delete**. Aplikasi akan menampilkan **dialog konfirmasi** sebelum habit benar-benar dihapus dari database.
 
-Aplikasi akan menampilkan **dialog konfirmasi** sebelum habit benar-benar dihapus dari database.
+sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB", maka akan muncul pop up 2 pilihan
+
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/7223bd08-301d-4bbd-ba81-fcf8ad106cf5" />
+
+a. jika batal, maka data masih ada dilist
+
+><img width="1918" height="1027" alt="Image" src="https://github.com/user-attachments/assets/b0e76449-60f3-4f94-9bbe-f948627f5cc5" />
+
+b.  jika ya,hapus. maka data akan hilang dari list, dan muncul pop up 
+
+><img width="1919" height="1032" alt="Image" src="https://github.com/user-attachments/assets/f895d4be-ed10-46dd-9334-9cf35b8477b1" />
+
 
 ---
 
 ### 9️⃣ Logout
 
-Pengguna dapat keluar dari aplikasi dengan menekan tombol **Logout** pada menu profil.
+Pengguna dapat keluar dari aplikasi dengan menekan tombol **Logout** pada menu profil. Setelah logout, pengguna akan kembali ke **halaman Welcome**.
 
-Setelah logout, pengguna akan kembali ke **halaman Welcome**.
+jika ingin logout pengguna tinggal klik ikon profil yang ada di app bar, disana ada tombol logout yang pengguna bisa klik
+
+<img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/ca413036-5c8d-41cb-82da-298d1df999d0" />
+
+akan muncul pop up 2 pilihan
+
+a. jika batal maka pengguna tetap ada di homepage aplikasi
+
+b. jika ya,logout maka akan muncul pop up dan diarahkan ke halaman welcome
+
+><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/727323d6-573f-4644-acc5-cfd1d0200570" />
