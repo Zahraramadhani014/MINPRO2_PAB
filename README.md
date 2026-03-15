@@ -242,7 +242,7 @@ Halaman pertama yang muncul ketika aplikasi dibuka.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" /> | <img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/b6b917dc-90d0-4151-ae62-34bcf67d8f55" /> |
+| <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/4ade33f8-04f6-4af1-8d02-3b094ed0a830" /> | <img width="1919" height="1033" alt="Image" src="https://github.com/user-attachments/assets/b6b917dc-90d0-4151-ae62-34bcf67d8f55" /> |
 
 ### Login Page
 
@@ -250,7 +250,7 @@ Pengguna dapat login menggunakan email dan password.
 
 | Light Mode | Dark Mode |
 |:----------|:-----|
-| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> | Zahraturramadhani |
+| <img width="1919" height="1031" alt="Image" src="https://github.com/user-attachments/assets/15b7937b-d86f-442f-947f-dd69e2f21270" /> |  |
 
 ### Register Page
 
