@@ -648,7 +648,7 @@ Setelah tombol Update Habit ditekan dan data berhasil diperbarui, sistem akan me
 
 ><img width="1913" height="1030" alt="Image" src="https://github.com/user-attachments/assets/85fb41e6-f671-4d41-a66d-3b737075691e" />
 
-Setelah proses edit selesai, pengguna akan kembali ke halaman utama dan data habit akan tampil sesuai dengan perubahan yang telah dilakukan sebelumnya. Dengan demikian, pengguna dapat langsung melihat hasil pembaruan data pada daftar h
+Setelah proses edit selesai, pengguna akan kembali ke halaman utama dan data habit akan tampil sesuai dengan perubahan yang telah dilakukan sebelumnya. Dengan demikian, pengguna dapat langsung melihat hasil pembaruan data pada daftar habit
 
 ><img width="1915" height="1032" alt="Image" src="https://github.com/user-attachments/assets/4b4a3146-6b15-431d-a6c5-974eae04b54a" />
 
@@ -664,7 +664,7 @@ Selain itu, pada halaman edit habit juga terdapat beberapa validasi untuk memast
 
 2. Keluar dari halaman edit saat data belum disimpan
   
-   Apabila pengguna telah melakukan perubahan pada form tetapi menekan tombol Batal sebelum menyimpan perubahan, maka sistem akan menampilkan peringatan bahwa perubahan belum disimpan. Pengguna kemudian diberikan dua pilihan, yaitu melanjutkan edit atau tetap keluar dari halaman edit. ke home page
+   Apabila pengguna telah melakukan perubahan pada form tetapi menekan tombol Batal sebelum menyimpan perubahan, maka sistem akan menampilkan peringatan bahwa perubahan belum disimpan. Pengguna kemudian diberikan dua pilihan, yaitu melanjutkan edit atau tetap keluar dari halaman edit.
 
     ><img width="1919" height="1027" alt="Image" src="https://github.com/user-attachments/assets/ef9cd80a-16c4-4922-9cca-31a3640f7371" />
 
@@ -676,7 +676,7 @@ Selain itu, pada halaman edit habit juga terdapat beberapa validasi untuk memast
      
 4. Keluar tanpa melakukan perubahan
 
-   Jika pengguna menekan tombol Batal atau tombol Back tanpa melakukan perubahan pada data habit, maka pengguna dapat langsung keluar dari halaman edit dan kembali ke halaman utama tanpa menampilkan peringatan.n kembali ke homepage
+   Jika pengguna menekan tombol Batal atau tombol Back tanpa melakukan perubahan pada data habit, maka pengguna dapat langsung keluar dari halaman edit dan kembali ke halaman utama tanpa menampilkan peringatan.
 
 
 5. Habit yang sudah selesai tidak dapat diedit
@@ -729,8 +729,8 @@ Akan muncul pop up 2 pilihan:
 
 ><img width="1600" height="858" alt="Image" src="https://github.com/user-attachments/assets/d0ea0a0f-b368-4e15-a5e6-c9e4d5408de0" />
 
-a. Jika memilih batal maka pengguna akan tetap berada di homepage aplikasi.
+a. Jika pengguna memilih batal, maka pengguna akan tetap berada di homepage aplikasi HabitBloom.
 
-b. Jika ya,logout maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
+b. Jika pengguna memilih ya,logout, maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/727323d6-573f-4644-acc5-cfd1d0200570" />
