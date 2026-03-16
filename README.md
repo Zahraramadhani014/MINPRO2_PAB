@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/Flutter-CE93D8?style=for-the-badge&logo=flutter&logoColor=white" />
   <img src="https://img.shields.io/badge/Dart-F8BBD0?style=for-the-badge&logo=dart&logoColor=black" />
   <img src="https://img.shields.io/badge/SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/Status-Completed-ff85c1?style=for-the-badge" />
 </p>
 
