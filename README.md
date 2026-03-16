@@ -282,7 +282,7 @@ a. Form Tambah Habit
 
 Halaman **Form Tambah Habit** digunakan ketika pengguna ingin menambah data habit baru. Pada halaman ini pengguna diminta untuk mengisi beberapa informasi seperti **nama habit**, **kategori**, **target harian**, serta **catatan tambahan** jika diperlukan.
     
-Form ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah sesuai, misalnya nama habit tidak boleh kosong, kategori harus dipilih terlebih dahulu, target harian tidak boleh kosong, serta catatan berupa opsional jadi pengguna bisa mengosongkan nya. Selain itu terdapat tombol **Tambah Habit** untuk menyimpan data habit ke database, serta tombol **Reset Form** untuk mengosongkan kembali seluruh input pada form.
+Form ini juga dilengkapi dengan validasi input untuk memastikan data yang dimasukkan sudah sesuai, misalnya nama habit tidak boleh kosong, kategori harus dipilih terlebih dahulu, target harian tidak boleh kosong, serta catatan bersifat opsional sehingga pengguna dapat mengosongkannya. Selain itu terdapat tombol **Tambah Habit** untuk menyimpan data habit ke database, serta tombol **Reset Form** untuk mengosongkan kembali seluruh input pada form.
     
 Seperti halaman lainnya, tampilan halaman ini juga mendukung **Light Mode** dan **Dark Mode** sehingga tampilan aplikasi tetap nyaman digunakan sesuai tema yang dipilih oleh pengguna.
 
@@ -729,8 +729,8 @@ Akan muncul pop up 2 pilihan:
 
 ><img width="1600" height="858" alt="Image" src="https://github.com/user-attachments/assets/d0ea0a0f-b368-4e15-a5e6-c9e4d5408de0" />
 
-a. Jika pengguna memilih batal, maka pengguna akan tetap berada di homepage aplikasi HabitBloom.
+a. Jika pengguna memilih Batal, maka pengguna akan tetap berada di homepage aplikasi HabitBloom.
 
-b. Jika pengguna memilih ya,logout, maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
+b. Jika pengguna memilih Ya,Logout, maka akan muncul pop up notifikasi dan diarahkan ke halaman welcome.
 
 ><img width="1919" height="1030" alt="Image" src="https://github.com/user-attachments/assets/727323d6-573f-4644-acc5-cfd1d0200570" />
