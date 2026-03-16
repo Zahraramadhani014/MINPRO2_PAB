@@ -694,7 +694,7 @@ Pada aplikasi HabitBloom, pengguna juga dapat menghapus habit yang sudah tidak d
 
 Pada gambar ini terlihat daftar habit pada halaman utama. Setiap habit memiliki beberapa ikon aksi di bagian kanan, yaitu checkbox untuk menandai selesai, ikon edit untuk mengubah data habit, dan ikon delete untuk menghapus habit. Jika pengguna menekan ikon delete, maka sistem akan menampilkan dialog konfirmasi sebelum data benar-benar dihapus.
 
-<img width="1600" height="860" alt="Image" src="https://github.com/user-attachments/assets/c71e0ef8-6ec2-48bd-9039-db301ff48889" />
+><img width="1918" height="1027" alt="Image" src="https://github.com/user-attachments/assets/b0e76449-60f3-4f94-9bbe-f948627f5cc5" />
 
 Sebagai contoh disini saya ingin menghapus "mengerjakan tugas kuliah PAB". Pada gambar ini ditampilkan popup konfirmasi penghapusan habit. Dialog ini muncul untuk memastikan bahwa pengguna tidak sengaja menghapus data. Pada dialog tersebut terdapat dua pilihan, yaitu Batal untuk membatalkan proses penghapusan dan Ya, Hapus untuk melanjutkan penghapusan habit.
 
