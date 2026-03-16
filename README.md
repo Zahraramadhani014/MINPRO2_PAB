@@ -33,23 +33,17 @@
 
 # 📌 Deskripsi Aplikasi
 
-**HabitBloom** merupakan aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna membangun kebiasaan positif serta menjaga konsistensi aktivitas harian.
-
-Aplikasi ini memungkinkan pengguna untuk mencatat berbagai kebiasaan yang ingin dilakukan setiap hari, seperti belajar, olahraga, membaca buku, atau aktivitas produktif lainnya. Setiap kebiasaan dapat ditambahkan, diedit, maupun dihapus secara fleksibel.
+**HabitBloom** merupakan aplikasi mobile berbasis Flutter yang dirancang untuk membantu pengguna membangun kebiasaan positif serta menjaga konsistensi aktivitas harian. Aplikasi ini memungkinkan pengguna untuk mencatat berbagai kebiasaan yang ingin dilakukan setiap hari, seperti belajar, olahraga, membaca buku, atau aktivitas produktif lainnya. Setiap kebiasaan dapat ditambahkan, diedit, maupun dihapus secara fleksibel.
 
 HabitBloom juga menyediakan fitur **progress tracking** yang menampilkan jumlah kebiasaan yang telah diselesaikan oleh pengguna. Dengan fitur ini, pengguna dapat melihat perkembangan konsistensi mereka dalam menjalankan habit setiap hari.
 
-Data kebiasaan yang dibuat oleh pengguna akan disimpan menggunakan **Supabase Database**, sehingga data tersebut dapat dikelola secara dinamis melalui operasi **CRUD** (Create, Read, Update, Delete).
-
-Selain itu, aplikasi ini dilengkapi dengan **sistem autentikasi login dan register menggunakan Supabase Auth** serta mendukung **Light Mode dan Dark Mode** untuk meningkatkan kenyamanan pengguna.
+Data kebiasaan yang dibuat oleh pengguna akan disimpan menggunakan **Supabase Database**, sehingga data tersebut dapat dikelola secara dinamis melalui operasi **CRUD** (Create, Read, Update, Delete). Selain itu, aplikasi ini dilengkapi dengan **sistem autentikasi login dan register menggunakan Supabase Auth** serta mendukung **Light Mode dan Dark Mode** untuk meningkatkan kenyamanan pengguna.
 
 Selain membantu pengguna mencatat kebiasaan, HabitBloom juga dirancang dengan tampilan antarmuka yang sederhana dan mudah digunakan sehingga pengguna dapat mengelola habit mereka tanpa merasa rumit. Pengguna dapat menambahkan habit baru dengan menentukan nama kebiasaan, kategori, target harian, serta catatan tambahan jika diperlukan.
 
 Pada halaman utama aplikasi, seluruh habit yang telah dibuat akan ditampilkan dalam bentuk daftar sehingga pengguna dapat dengan mudah melihat aktivitas apa saja yang perlu dilakukan. Setiap habit juga dapat ditandai sebagai selesai ketika sudah dilakukan, sehingga pengguna dapat mengetahui sejauh mana progres kebiasaan yang telah mereka jalankan.
 
-Aplikasi ini juga menyediakan fitur untuk mengedit atau menghapus habit apabila pengguna ingin memperbarui target atau tidak lagi menjalankan kebiasaan tersebut. Dengan adanya fitur ini, pengguna dapat menyesuaikan daftar kebiasaan mereka sesuai kebutuhan.
-
-Melalui aplikasi HabitBloom, diharapkan pengguna dapat lebih konsisten dalam menjalankan kebiasaan positif setiap hari, memantau perkembangan mereka, serta membangun rutinitas yang lebih produktif secara bertahap.
+Aplikasi ini juga menyediakan fitur untuk mengedit atau menghapus habit apabila pengguna ingin memperbarui target atau tidak lagi menjalankan kebiasaan tersebut. Dengan adanya fitur ini, pengguna dapat menyesuaikan daftar kebiasaan mereka sesuai kebutuhan. Melalui aplikasi HabitBloom, diharapkan pengguna dapat lebih konsisten dalam menjalankan kebiasaan positif setiap hari, memantau perkembangan mereka, serta membangun rutinitas yang lebih produktif secara bertahap.
 
 ---
 
@@ -200,9 +194,7 @@ Aplikasi **HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukun
   Struktur project pada aplikasi **HabitBloom** mengikuti struktur standar dari project Flutter. Saat project Flutter dibuat, beberapa folder seperti
   `android`, `ios`, `linux`, `macos`, `web`, dan `windows` akan otomatis terbentuk. Folder-folder ini digunakan untuk mendukung aplikasi agar bisa dijalankan di berbagai platform, sehingga saya tidak melakukan banyak perubahan pada bagian tersebut karena lebih berfungsi untuk konfigurasi sistem.
 
-  Sebagian besar kode yang saya kerjakan berada di dalam folder **lib**. Folder ini merupakan bagian utama dari aplikasi karena di sinilah seluruh logika program dan tampilan aplikasi ditulis.
-
-  Di dalam folder `lib`, terdapat beberapa folder yang digunakan untuk memisahkan kode berdasarkan fungsinya agar lebih rapi dan mudah dikelola.
+  Sebagian besar kode yang saya kerjakan berada di dalam folder **lib**. Folder ini merupakan bagian utama dari aplikasi karena di sinilah seluruh logika program dan tampilan aplikasi ditulis. Di dalam folder `lib`, terdapat beberapa folder yang digunakan untuk memisahkan kode berdasarkan fungsinya agar lebih rapi dan mudah dikelola.
 
   Folder **config** digunakan untuk menyimpan file konfigurasi yang berkaitan dengan koneksi aplikasi ke layanan eksternal. Pada project ini terdapat file `supabase_config.dart` yang berfungsi untuk menghubungkan aplikasi dengan Supabase sebagai backend database dan authentication.
 
@@ -220,9 +212,7 @@ Aplikasi **HabitBloom** dikembangkan dengan memanfaatkan beberapa tools pendukun
 
   Selain itu terdapat beberapa file konfigurasi penting seperti `pubspec.yaml` yang digunakan untuk mengatur dependency atau library yang digunakan pada project Flutter serta mendaftarkan assets yang digunakan dalam aplikasi. Selain itu terdapat juga file `.env` yang digunakan untuk menyimpan konfigurasi sensitif seperti Supabase URL dan API Key. Dengan menggunakan file ini, informasi penting tersebut tidak langsung dituliskan di dalam source code sehingga lebih aman ketika project diunggah ke GitHub atau dibagikan kepada orang lain.
 
-  Project ini juga menggunakan file `.gitignore` yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub. Biasanya file yang diabaikan adalah file build, file konfigurasi lokal, serta file yang berisi data sensitif seperti `.env`. Dengan adanya `.gitignore`, repository menjadi lebih rapi dan hanya berisi file yang benar-benar diperlukan untuk menjalankan project.
-
-  Dengan pembagian struktur seperti ini, kode program menjadi lebih terorganisir, mudah dibaca, serta memudahkan proses pengembangan dan pemeliharaan aplikasi di kemudian hari.
+  Project ini juga menggunakan file `.gitignore` yang berfungsi untuk menentukan file atau folder mana saja yang tidak perlu diunggah ke repository GitHub. Biasanya file yang diabaikan adalah file build, file konfigurasi lokal, serta file yang berisi data sensitif seperti `.env`. Dengan adanya `.gitignore`, repository menjadi lebih rapi dan hanya berisi file yang benar-benar diperlukan untuk menjalankan project. Dengan pembagian struktur seperti ini, kode program menjadi lebih terorganisir, mudah dibaca, serta memudahkan proses pengembangan dan pemeliharaan aplikasi di kemudian hari.
 
 # 🗄 Struktur Database
 
